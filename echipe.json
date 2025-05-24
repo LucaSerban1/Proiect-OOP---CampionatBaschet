@@ -1,0 +1,523 @@
+[
+  {
+    "nume": "Atlanta Hawks",
+    "jucatori": [
+      { "tip": "Fundas", "nume": "Trae Young", "varsta": 26, "rating": 5, "ppg": 26.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Dejounte Murray", "varsta": 28, "rating": 4, "ppg": 21.3, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Clint Capela", "varsta": 30, "rating": 4, "ppg": 12.1, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Bogdan Bogdanovic", "varsta": 32, "rating": 4, "ppg": 17.2, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Jalen Johnson", "varsta": 23, "rating": 4, "ppg": 16.8, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "Kobe Bufkin", "varsta": 21, "rating": 3, "ppg": 8.2, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Onyeka Okongwu", "varsta": 24, "rating": 4, "ppg": 11.3, "calitate": "Interior Defence" },
+      { "tip": "Extrema", "nume": "Saddiq Bey", "varsta": 26, "rating": 3, "ppg": 13.9, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Wesley Matthews", "varsta": 38, "rating": 2, "ppg": 4.1, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Bruno Fernando", "varsta": 26, "rating": 2, "ppg": 5.3, "calitate": "Rebounder" }
+    ]
+  },
+  {
+    "nume": "Boston Celtics",
+    "jucatori": [
+      { "tip": "Extrema", "nume": "Jayson Tatum", "varsta": 27, "rating": 5, "ppg": 27.4, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Jaylen Brown", "varsta": 28, "rating": 5, "ppg": 24.1, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Kristaps Porzingis", "varsta": 29, "rating": 5, "ppg": 21.7, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "Jrue Holiday", "varsta": 34, "rating": 4, "ppg": 13.2, "calitate": "Playmaker" },
+      { "tip": "Fundas", "nume": "Derrick White", "varsta": 30, "rating": 4, "ppg": 15.8, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Al Horford", "varsta": 38, "rating": 3, "ppg": 8.9, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Sam Hauser", "varsta": 27, "rating": 3, "ppg": 9.5, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Payton Pritchard", "varsta": 27, "rating": 3, "ppg": 8.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Oshae Brissett", "varsta": 26, "rating": 3, "ppg": 6.2, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Luke Kornet", "varsta": 29, "rating": 2, "ppg": 4.8, "calitate": "Rebounder" }
+    ]
+  },
+  {
+    "nume": "Brooklyn Nets",
+    "jucatori": [
+      { "tip": "Extrema", "nume": "Mikal Bridges", "varsta": 28, "rating": 4, "ppg": 20.8, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Ben Simmons", "varsta": 28, "rating": 3, "ppg": 8.7, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Nic Claxton", "varsta": 25, "rating": 4, "ppg": 13.4, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Cameron Johnson", "varsta": 29, "rating": 4, "ppg": 14.2, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Dennis Schroder", "varsta": 31, "rating": 3, "ppg": 15.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Cam Thomas", "varsta": 23, "rating": 4, "ppg": 22.3, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Dorian Finney-Smith", "varsta": 32, "rating": 3, "ppg": 9.1, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Day'Ron Sharpe", "varsta": 23, "rating": 3, "ppg": 8.3, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Lonnie Walker IV", "varsta": 26, "rating": 3, "ppg": 10.5, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Trendon Watford", "varsta": 24, "rating": 2, "ppg": 7.2, "calitate": "Interior Defence" }
+    ]
+  },
+  {
+    "nume": "Charlotte Hornets",
+    "jucatori": [
+      { "tip": "Fundas", "nume": "LaMelo Ball", "varsta": 23, "rating": 4, "ppg": 24.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Brandon Miller", "varsta": 22, "rating": 4, "ppg": 18.6, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Miles Bridges", "varsta": 27, "rating": 4, "ppg": 21.9, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Mark Williams", "varsta": 23, "rating": 3, "ppg": 13.5, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Tre Mann", "varsta": 24, "rating": 3, "ppg": 9.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Cody Martin", "varsta": 29, "rating": 3, "ppg": 6.3, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Nick Richards", "varsta": 27, "rating": 3, "ppg": 10.2, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Seth Curry", "varsta": 34, "rating": 3, "ppg": 6.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Grant Williams", "varsta": 26, "rating": 3, "ppg": 9.3, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "Vasilije Micic", "varsta": 30, "rating": 2, "ppg": 7.5, "calitate": "Playmaker" }
+    ]
+  },
+  {
+    "nume": "Chicago Bulls",
+    "jucatori": [
+      { "tip": "Extrema", "nume": "DeMar DeRozan", "varsta": 35, "rating": 4, "ppg": 23.8, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Zach LaVine", "varsta": 30, "rating": 4, "ppg": 20.3, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Nikola Vucevic", "varsta": 34, "rating": 4, "ppg": 17.9, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Coby White", "varsta": 25, "rating": 4, "ppg": 16.2, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Alex Caruso", "varsta": 31, "rating": 4, "ppg": 10.8, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Patrick Williams", "varsta": 23, "rating": 3, "ppg": 11.2, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "Ayo Dosunmu", "varsta": 25, "rating": 3, "ppg": 9.3, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Andre Drummond", "varsta": 31, "rating": 3, "ppg": 9.1, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Jevon Carter", "varsta": 29, "rating": 3, "ppg": 6.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Torrey Craig", "varsta": 34, "rating": 2, "ppg": 6.2, "calitate": "Interior Defence" }
+    ]
+  },
+  {
+    "nume": "Cleveland Cavaliers",
+    "jucatori": [
+      { "tip": "Fundas", "nume": "Darius Garland", "varsta": 25, "rating": 4, "ppg": 19.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Donovan Mitchell", "varsta": 28, "rating": 5, "ppg": 26.7, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Jarrett Allen", "varsta": 26, "rating": 4, "ppg": 15.2, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Evan Mobley", "varsta": 23, "rating": 4, "ppg": 16.5, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "Caris LeVert", "varsta": 30, "rating": 3, "ppg": 14.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Max Strus", "varsta": 28, "rating": 3, "ppg": 12.3, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Craig Porter Jr.", "varsta": 24, "rating": 3, "ppg": 7.8, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Tristan Thompson", "varsta": 33, "rating": 2, "ppg": 5.1, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Isaac Okoro", "varsta": 24, "rating": 3, "ppg": 8.9, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Sam Merrill", "varsta": 28, "rating": 2, "ppg": 6.5, "calitate": "Playmaker" }
+    ]
+  },
+  {
+    "nume": "Dallas Mavericks",
+    "jucatori": [
+      { "tip": "Fundas", "nume": "Luka Doncic", "varsta": 25, "rating": 5, "ppg": 33.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Kyrie Irving", "varsta": 32, "rating": 5, "ppg": 25.6, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Daniel Gafford", "varsta": 26, "rating": 4, "ppg": 11.2, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "P.J. Washington", "varsta": 26, "rating": 4, "ppg": 13.8, "calitate": "Interior Defence" },
+      { "tip": "Extrema", "nume": "Josh Green", "varsta": 23, "rating": 3, "ppg": 9.7, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Dante Exum", "varsta": 29, "rating": 3, "ppg": 7.9, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Dereck Lively II", "varsta": 20, "rating": 3, "ppg": 8.5, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Tim Hardaway Jr.", "varsta": 32, "rating": 3, "ppg": 14.3, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Jaden Hardy", "varsta": 22, "rating": 2, "ppg": 6.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Derrick Jones Jr.", "varsta": 27, "rating": 3, "ppg": 8.1, "calitate": "Interior Defence" }
+    ]
+  },
+  {
+    "nume": "Denver Nuggets",
+    "jucatori": [
+      { "tip": "Centru", "nume": "Nikola Jokic", "varsta": 29, "rating": 5, "ppg": 26.4, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Jamal Murray", "varsta": 27, "rating": 5, "ppg": 21.2, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Michael Porter Jr.", "varsta": 26, "rating": 4, "ppg": 17.5, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Aaron Gordon", "varsta": 29, "rating": 4, "ppg": 14.0, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "Reggie Jackson", "varsta": 34, "rating": 3, "ppg": 10.3, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Kentavious Caldwell-Pope", "varsta": 31, "rating": 4, "ppg": 10.8, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Christian Braun", "varsta": 23, "rating": 3, "ppg": 7.9, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Zeke Nnaji", "varsta": 23, "rating": 2, "ppg": 5.1, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Collin Gillespie", "varsta": 25, "rating": 2, "ppg": 3.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Julian Strawther", "varsta": 22, "rating": 2, "ppg": 6.2, "calitate": "Perimeter Defence" }
+    ]
+  },
+  {
+    "nume": "Detroit Pistons",
+    "jucatori": [
+      { "tip": "Fundas", "nume": "Cade Cunningham", "varsta": 23, "rating": 4, "ppg": 22.7, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Jaden Ivey", "varsta": 22, "rating": 3, "ppg": 16.3, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Jalen Duren", "varsta": 20, "rating": 4, "ppg": 13.5, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Ausar Thompson", "varsta": 21, "rating": 3, "ppg": 9.8, "calitate": "Interior Defence" },
+      { "tip": "Extrema", "nume": "Bojan Bogdanovic", "varsta": 35, "rating": 3, "ppg": 18.1, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Marcus Sasser", "varsta": 24, "rating": 3, "ppg": 8.9, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Isaiah Stewart", "varsta": 23, "rating": 3, "ppg": 11.2, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Evan Fournier", "varsta": 32, "rating": 2, "ppg": 6.7, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Monte Morris", "varsta": 29, "rating": 3, "ppg": 7.5, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Stanley Umude", "varsta": 25, "rating": 2, "ppg": 5.3, "calitate": "Interior Defence" }
+    ]
+  },
+  {
+    "nume": "Golden State Warriors",
+    "jucatori": [
+      { "tip": "Fundas", "nume": "Stephen Curry", "varsta": 36, "rating": 5, "ppg": 28.3, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Klay Thompson", "varsta": 34, "rating": 4, "ppg": 18.5, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Andrew Wiggins", "varsta": 29, "rating": 4, "ppg": 16.8, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Chris Paul", "varsta": 39, "rating": 4, "ppg": 9.7, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Draymond Green", "varsta": 34, "rating": 4, "ppg": 8.9, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Kevon Looney", "varsta": 28, "rating": 3, "ppg": 6.2, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Brandin Podziemski", "varsta": 21, "rating": 3, "ppg": 10.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Jonathan Kuminga", "varsta": 22, "rating": 4, "ppg": 14.5, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Trayce Jackson-Davis", "varsta": 24, "rating": 3, "ppg": 7.8, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Gary Payton II", "varsta": 32, "rating": 3, "ppg": 5.6, "calitate": "Playmaker" }
+    ]
+  },
+  {
+    "nume": "Houston Rockets",
+    "jucatori": [
+      { "tip": "Extrema", "nume": "Jalen Green", "varsta": 22, "rating": 4, "ppg": 22.1, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Alperen Sengun", "varsta": 22, "rating": 4, "ppg": 18.9, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Fred VanVleet", "varsta": 30, "rating": 4, "ppg": 16.7, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Dillon Brooks", "varsta": 28, "rating": 4, "ppg": 13.5, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Jabari Smith Jr.", "varsta": 21, "rating": 4, "ppg": 14.2, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "Amen Thompson", "varsta": 21, "rating": 3, "ppg": 9.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Cam Whitmore", "varsta": 20, "rating": 3, "ppg": 11.3, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Steven Adams", "varsta": 31, "rating": 3, "ppg": 6.9, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Aaron Holiday", "varsta": 28, "rating": 2, "ppg": 6.5, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Tari Eason", "varsta": 23, "rating": 3, "ppg": 9.7, "calitate": "Interior Defence" }
+    ]
+  },
+  {
+    "nume": "Indiana Pacers",
+    "jucatori": [
+      { "tip": "Fundas", "nume": "Tyrese Haliburton", "varsta": 24, "rating": 5, "ppg": 20.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Pascal Siakam", "varsta": 30, "rating": 5, "ppg": 22.3, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Myles Turner", "varsta": 28, "rating": 4, "ppg": 17.1, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Bennedict Mathurin", "varsta": 22, "rating": 4, "ppg": 16.5, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Andrew Nembhard", "varsta": 24, "rating": 3, "ppg": 9.7, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Aaron Nesmith", "varsta": 25, "rating": 3, "ppg": 12.3, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "T.J. McConnell", "varsta": 32, "rating": 3, "ppg": 8.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Jarace Walker", "varsta": 21, "rating": 3, "ppg": 7.8, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Jalen Smith", "varsta": 24, "rating": 3, "ppg": 9.5, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Doug McDermott", "varsta": 32, "rating": 2, "ppg": 6.9, "calitate": "Perimeter Defence" }
+    ]
+  },
+  {
+    "nume": "LA Clippers",
+    "jucatori": [
+      { "tip": "Extrema", "nume": "Kawhi Leonard", "varsta": 33, "rating": 5, "ppg": 23.8, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Paul George", "varsta": 34, "rating": 5, "ppg": 22.6, "calitate": "Playmaker" },
+      { "tip": "Fundas", "nume": "James Harden", "varsta": 35, "rating": 4, "ppg": 16.8, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Ivica Zubac", "varsta": 27, "rating": 4, "ppg": 11.7, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Russell Westbrook", "varsta": 35, "rating": 4, "ppg": 11.2, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Norman Powell", "varsta": 31, "rating": 4, "ppg": 13.9, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Terance Mann", "varsta": 28, "rating": 3, "ppg": 8.7, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Mason Plumlee", "varsta": 34, "rating": 3, "ppg": 5.3, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Bones Hyland", "varsta": 24, "rating": 3, "ppg": 7.8, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "P.J. Tucker", "varsta": 39, "rating": 2, "ppg": 3.1, "calitate": "Interior Defence" }
+    ]
+  },
+  {
+    "nume": "Los Angeles Lakers",
+    "jucatori": [
+      { "tip": "Extrema", "nume": "LeBron James", "varsta": 39, "rating": 5, "ppg": 25.2, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Anthony Davis", "varsta": 31, "rating": 5, "ppg": 24.7, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "D'Angelo Russell", "varsta": 28, "rating": 4, "ppg": 18.1, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Austin Reaves", "varsta": 26, "rating": 4, "ppg": 16.5, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Rui Hachimura", "varsta": 26, "rating": 4, "ppg": 13.7, "calitate": "Interior Defence" },
+      { "tip": "Fundas", "nume": "Gabe Vincent", "varsta": 28, "rating": 3, "ppg": 7.8, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Jaxson Hayes", "varsta": 24, "rating": 3, "ppg": 6.2, "calitate": "Rebounder" },
+      { "tip": "Extrema", "nume": "Taurean Prince", "varsta": 30, "rating": 3, "ppg": 9.1, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Jalen Hood-Schifino", "varsta": 21, "rating": 2, "ppg": 4.8, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Christian Wood", "varsta": 29, "rating": 3, "ppg": 10.3, "calitate": "Rebounder" }
+    ]
+  },
+  {
+    "nume": "Memphis Grizzlies",
+    "jucatori": [
+      { "tip": "Fundas", "nume": "Ja Morant", "varsta": 25, "rating": 5, "ppg": 26.4, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Desmond Bane", "varsta": 26, "rating": 4, "ppg": 23.5, "calitate": "Perimeter Defence" },
+      { "tip": "Centru", "nume": "Jaren Jackson Jr.", "varsta": 25, "rating": 5, "ppg": 18.6, "calitate": "Interior Defence" },
+      { "tip": "Extrema", "nume": "Marcus Smart", "varsta": 30, "rating": 4, "ppg": 12.3, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Derrick Rose", "varsta": 36, "rating": 3, "ppg": 8.9, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "Ziaire Williams", "varsta": 23, "rating": 3, "ppg": 10.2, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Steven Adams", "varsta": 31, "rating": 3, "ppg": 8.7, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Luke Kennard", "varsta": 28, "rating": 3, "ppg": 11.5, "calitate": "Playmaker" },
+      { "tip": "Extrema", "nume": "David Roddy", "varsta": 23, "rating": 2, "ppg": 6.8, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Santi Aldama", "varsta": 23, "rating": 3, "ppg": 9.3, "calitate": "Rebounder" }
+    ]
+  },
+  {
+    "nume": "Miami Heat",
+    "jucatori": [
+      {
+        "tip": "Extrema",
+        "nume": "Jimmy Butler",
+        "varsta": 35,
+        "rating": 5,
+        "ppg": 21.5,
+        "calitate": "Perimeter Defence"
+      },
+      {
+        "tip": "Centru",
+        "nume": "Bam Adebayo",
+        "varsta": 27,
+        "rating": 5,
+        "ppg": 19.3,
+        "calitate": "Interior Defence"
+      },
+      {
+        "tip": "Fundas",
+        "nume": "Terry Rozier",
+        "varsta": 30,
+        "rating": 4,
+        "ppg": 18.7,
+        "calitate": "Playmaker"
+      },
+      {
+        "tip": "Extrema",
+        "nume": "Tyler Herro",
+        "varsta": 24,
+        "rating": 4,
+        "ppg": 20.1,
+        "calitate": "Perimeter Defence"
+      },
+      {
+        "tip": "Extrema",
+        "nume": "Duncan Robinson",
+        "varsta": 30,
+        "rating": 3,
+        "ppg": 12.8,
+        "calitate": "Perimeter Defence"
+      },
+      {
+        "tip": "Fundas",
+        "nume": "Jaime Jaquez Jr.",
+        "varsta": 23,
+        "rating": 3,
+        "ppg": 11.2,
+        "calitate": "Playmaker"
+      },
+      {
+        "tip": "Centru",
+        "nume": "Kevin Love",
+        "varsta": 36,
+        "rating": 3,
+        "ppg": 8.9,
+        "calitate": "Rebounder"
+      },
+      {
+        "tip": "Fundas",
+        "nume": "Josh Richardson",
+        "varsta": 31,
+        "rating": 3,
+        "ppg": 9.7,
+        "calitate": "Playmaker"
+      },
+      {
+        "tip": "Extrema",
+        "nume": "Haywood Highsmith",
+        "varsta": 27,
+        "rating": 3,
+        "ppg": 6.5,
+        "calitate": "Interior Defence"
+      },
+      {
+        "tip": "Centru",
+        "nume": "Thomas Bryant",
+        "varsta": 27,
+        "rating": 2,
+        "ppg": 5.3,
+        "calitate": "Rebounder"
+      }
+    ]
+  },
+  {
+    "nume": "Milwaukee Bucks",
+    "jucatori": [
+      { "tip": "Extrema", "nume": "Giannis Antetokounmpo", "varsta": 30, "rating": 5, "ppg": 30.4, "calitate": "Interior Defence" },
+      { "tip": "Extrema", "nume": "Khris Middleton", "varsta": 33, "rating": 4, "ppg": 15.1, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "Damian Lillard", "varsta": 34, "rating": 5, "ppg": 26.0, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Brook Lopez", "varsta": 36, "rating": 4, "ppg": 12.3, "calitate": "Interior Defence" },
+      { "tip": "Extrema", "nume": "Bobby Portis", "varsta": 29, "rating": 3, "ppg": 13.8, "calitate": "Rebounder" },
+      { "tip": "Fundas", "nume": "Gary Trent Jr.", "varsta": 25, "rating": 3, "ppg": 10.8, "calitate": "Perimeter Defence" },
+      { "tip": "Extrema", "nume": "Taurean Prince", "varsta": 31, "rating": 3, "ppg": 8.9, "calitate": "Perimeter Defence" },
+      { "tip": "Fundas", "nume": "AJ Green", "varsta": 26, "rating": 2, "ppg": 6.2, "calitate": "Playmaker" },
+      { "tip": "Centru", "nume": "Marjon Beauchamp", "varsta": 24, "rating": 2, "ppg": 4.7, "calitate": "Interior Defence" },
+      { "tip": "Centru", "nume": "Tyler Smith", "varsta": 20, "rating": 2, "ppg": 3.1, "calitate": "Rebounder" }
+    ]
+  },
+    {
+      "nume": "Minnesota Timberwolves",
+      "jucatori": [
+        { "tip": "Extrema", "nume": "Anthony Edwards", "varsta": 23, "rating": 5, "ppg": 25.9, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Karl-Anthony Towns", "varsta": 28, "rating": 5, "ppg": 22.1, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Jaden McDaniels", "varsta": 24, "rating": 4, "ppg": 10.9, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Mike Conley", "varsta": 37, "rating": 4, "ppg": 10.9, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Rudy Gobert", "varsta": 32, "rating": 4, "ppg": 14.0, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Naz Reid", "varsta": 25, "rating": 3, "ppg": 11.5, "calitate": "Rebounder" },
+        { "tip": "Fundas", "nume": "Nickeil Alexander-Walker", "varsta": 26, "rating": 3, "ppg": 7.6, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Kyle Anderson", "varsta": 31, "rating": 3, "ppg": 6.4, "calitate": "Playmaker" },
+        { "tip": "Fundas", "nume": "Donte DiVincenzo", "varsta": 28, "rating": 3, "ppg": 9.4, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Luka Garza", "varsta": 26, "rating": 2, "ppg": 4.8, "calitate": "Rebounder" }
+      ]
+    },
+    {
+      "nume": "New Orleans Pelicans",
+      "jucatori": [
+        { "tip": "Extrema", "nume": "Zion Williamson", "varsta": 24, "rating": 5, "ppg": 22.9, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Brandon Ingram", "varsta": 27, "rating": 4, "ppg": 20.8, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "CJ McCollum", "varsta": 33, "rating": 4, "ppg": 22.7, "calitate": "Playmaker" },
+        { "tip": "Fundas", "nume": "Dejounte Murray", "varsta": 28, "rating": 4, "ppg": 17.1, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Herb Jones", "varsta": 26, "rating": 3, "ppg": 11.0, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Jonas Valanciunas", "varsta": 32, "rating": 3, "ppg": 12.2, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Trey Murphy III", "varsta": 24, "rating": 3, "ppg": 14.8, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Jose Alvarado", "varsta": 27, "rating": 2, "ppg": 7.1, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Yves Missi", "varsta": 20, "rating": 2, "ppg": 6.9, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Javonte Green", "varsta": 31, "rating": 2, "ppg": 5.2, "calitate": "Perimeter Defence" }
+      ]
+    },
+    {
+      "nume": "New York Knicks",
+      "jucatori": [
+        { "tip": "Fundas", "nume": "Jalen Brunson", "varsta": 28, "rating": 5, "ppg": 24.0, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "OG Anunoby", "varsta": 27, "rating": 4, "ppg": 14.7, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Mikal Bridges", "varsta": 28, "rating": 4, "ppg": 15.6, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Josh Hart", "varsta": 30, "rating": 4, "ppg": 12.9, "calitate": "Rebounder" },
+        { "tip": "Centru", "nume": "Karl-Anthony Towns", "varsta": 28, "rating": 4, "ppg": 24.7, "calitate": "Rebounder" },
+        { "tip": "Fundas", "nume": "Tyler Kolek", "varsta": 24, "rating": 3, "ppg": 3.2, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Mitchell Robinson", "varsta": 27, "rating": 3, "ppg": 5.6, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Miles McBride", "varsta": 24, "rating": 3, "ppg": 8.1, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Precious Achiuwa", "varsta": 25, "rating": 2, "ppg": 7.9, "calitate": "Rebounder" },
+        { "tip": "Fundas", "nume": "Cameron Payne", "varsta": 30, "rating": 2, "ppg": 6.3, "calitate": "Playmaker" }
+      ]
+    },
+    {
+      "nume": "Oklahoma City Thunder",
+      "jucatori": [
+        { "tip": "Fundas", "nume": "Shai Gilgeous-Alexander", "varsta": 26, "rating": 5, "ppg": 30.3, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Jalen Williams", "varsta": 23, "rating": 4, "ppg": 19.1, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Chet Holmgren", "varsta": 22, "rating": 4, "ppg": 16.4, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Lu Dort", "varsta": 25, "rating": 4, "ppg": 10.7, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Josh Giddey", "varsta": 22, "rating": 3, "ppg": 12.3, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Isaiah Hartenstein", "varsta": 26, "rating": 3, "ppg": 8.5, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Cason Wallace", "varsta": 21, "rating": 3, "ppg": 6.8, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Aaron Wiggins", "varsta": 26, "rating": 2, "ppg": 6.4, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Jaylin Williams", "varsta": 22, "rating": 2, "ppg": 4.9, "calitate": "Rebounder" },
+        { "tip": "Fundas", "nume": "Alex Caruso", "varsta": 31, "rating": 3, "ppg": 5.1, "calitate": "Perimeter Defence" }
+      ]
+    },
+    {
+      "nume": "Orlando Magic",
+      "jucatori": [
+        { "tip": "Extrema", "nume": "Paolo Banchero", "varsta": 22, "rating": 5, "ppg": 22.6, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Franz Wagner", "varsta": 23, "rating": 4, "ppg": 19.7, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Jalen Suggs", "varsta": 23, "rating": 4, "ppg": 15.8, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Wendell Carter Jr.", "varsta": 25, "rating": 3, "ppg": 9.6, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Kentavious Caldwell-Pope", "varsta": 32, "rating": 3, "ppg": 7.9, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Moritz Wagner", "varsta": 27, "rating": 3, "ppg": 12.9, "calitate": "Rebounder" },
+        { "tip": "Fundas", "nume": "Cole Anthony", "varsta": 24, "rating": 3, "ppg": 11.1, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Goga Bitadze", "varsta": 25, "rating": 2, "ppg": 6.9, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Jett Howard", "varsta": 21, "rating": 2, "ppg": 3.8, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Anthony Black", "varsta": 21, "rating": 2, "ppg": 7.3, "calitate": "Playmaker" }
+      ]
+    },
+    {
+      "nume": "Philadelphia 76ers",
+      "jucatori": [
+        { "tip": "Centru", "nume": "Joel Embiid", "varsta": 30, "rating": 5, "ppg": 34.7, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Paul George", "varsta": 34, "rating": 4, "ppg": 15.7, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Tyrese Maxey", "varsta": 24, "rating": 4, "ppg": 25.9, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Caleb Martin", "varsta": 29, "rating": 3, "ppg": 11.2, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Kyle Lowry", "varsta": 38, "rating": 3, "ppg": 7.0, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Kelly Oubre Jr.", "varsta": 29, "rating": 3, "ppg": 12.4, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Andre Drummond", "varsta": 31, "rating": 3, "ppg": 7.9, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Eric Gordon", "varsta": 36, "rating": 2, "ppg": 11.0, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Reggie Jackson", "varsta": 34, "rating": 2, "ppg": 6.2, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Jared McCain", "varsta": 20, "rating": 2, "ppg": 15.3, "calitate": "Playmaker" }
+      ]
+    },
+    {
+      "nume": "Phoenix Suns",
+      "jucatori": [
+        { "tip": "Extrema", "nume": "Kevin Durant", "varsta": 36, "rating": 5, "ppg": 27.6, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Devin Booker", "varsta": 28, "rating": 5, "ppg": 24.8, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Bradley Beal", "varsta": 31, "rating": 4, "ppg": 17.8, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Jusuf Nurkic", "varsta": 30, "rating": 3, "ppg": 10.1, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Ryan Dunn", "varsta": 21, "rating": 3, "ppg": 5.4, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Tyus Jones", "varsta": 28, "rating": 3, "ppg": 10.0, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Royce O'Neale", "varsta": 31, "rating": 3, "ppg": 8.7, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Mason Plumlee", "varsta": 34, "rating": 2, "ppg": 5.1, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Josh Okogie", "varsta": 26, "rating": 2, "ppg": 4.8, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Monte Morris", "varsta": 30, "rating": 2, "ppg": 7.4, "calitate": "Playmaker" }
+      ]
+    },
+    {
+      "nume": "Portland Trail Blazers",
+      "jucatori": [
+        { "tip": "Fundas", "nume": "Anfernee Simons", "varsta": 25, "rating": 4, "ppg": 18.0, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Jerami Grant", "varsta": 30, "rating": 4, "ppg": 15.0, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Deandre Ayton", "varsta": 26, "rating": 4, "ppg": 13.7, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Shaedon Sharpe", "varsta": 21, "rating": 3, "ppg": 15.9, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Scoot Henderson", "varsta": 21, "rating": 3, "ppg": 12.4, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Toumani Camara", "varsta": 24, "rating": 3, "ppg": 7.5, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Deni Avdija", "varsta": 24, "rating": 3, "ppg": 10.6, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Robert Williams III", "varsta": 27, "rating": 3, "ppg": 6.4, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Dalano Banton", "varsta": 25, "rating": 2, "ppg": 8.3, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Donovan Clingan", "varsta": 21, "rating": 2, "ppg": 5.9, "calitate": "Interior Defence" }
+      ]
+    },
+    {
+      "nume": "Sacramento Kings",
+      "jucatori": [
+        { "tip": "Extrema", "nume": "De'Aaron Fox", "varsta": 27, "rating": 5, "ppg": 26.3, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Domantas Sabonis", "varsta": 28, "rating": 4, "ppg": 20.7, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "DeMar DeRozan", "varsta": 35, "rating": 4, "ppg": 21.2, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Keegan Murray", "varsta": 24, "rating": 3, "ppg": 12.1, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Malik Monk", "varsta": 26, "rating": 3, "ppg": 15.5, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Trey Lyles", "varsta": 29, "rating": 3, "ppg": 8.7, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Keon Ellis", "varsta": 25, "rating": 3, "ppg": 6.0, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Kevin Huerter", "varsta": 26, "rating": 2, "ppg": 10.2, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Alex Len", "varsta": 31, "rating": 2, "ppg": 4.6, "calitate": "Interior Defence" },
+        { "tip": "Fundas", "nume": "Davion Mitchell", "varsta": 26, "rating": 2, "ppg": 5.3, "calitate": "Perimeter Defence" }
+      ]
+    },
+    {
+      "nume": "San Antonio Spurs",
+      "jucatori": [
+        { "tip": "Centru", "nume": "Victor Wembanyama", "varsta": 21, "rating": 5, "ppg": 24.6, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Devin Vassell", "varsta": 24, "rating": 4, "ppg": 18.5, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Chris Paul", "varsta": 39, "rating": 4, "ppg": 10.8, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Jeremy Sochan", "varsta": 21, "rating": 3, "ppg": 10.8, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Keldon Johnson", "varsta": 25, "rating": 3, "ppg": 15.5, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Stephon Castle", "varsta": 20, "rating": 3, "ppg": 11.1, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Zach Collins", "varsta": 27, "rating": 3, "ppg": 11.2, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Julian Champagnie", "varsta": 23, "rating": 2, "ppg": 7.2, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Tre Jones", "varsta": 25, "rating": 2, "ppg": 10.0, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Malaki Branham", "varsta": 22, "rating": 2, "ppg": 9.6, "calitate": "Perimeter Defence" }
+      ]
+    },
+    {
+      "nume": "Toronto Raptors",
+      "jucatori": [
+        { "tip": "Extrema", "nume": "Scottie Barnes", "varsta": 23, "rating": 4, "ppg": 19.3, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "RJ Barrett", "varsta": 24, "rating": 4, "ppg": 23.0, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Jakob Poeltl", "varsta": 29, "rating": 3, "ppg": 15.0, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "Gradey Dick", "varsta": 21, "rating": 3, "ppg": 8.5, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Immanuel Quickley", "varsta": 25, "rating": 3, "ppg": 18.6, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Ochai Agbaji", "varsta": 24, "rating": 3, "ppg": 6.5, "calitate": "Perimeter Defence" },
+        { "tip": "Centru", "nume": "Kelly Olynyk", "varsta": 33, "rating": 3, "ppg": 7.3, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Chris Boucher", "varsta": 32, "rating": 2, "ppg": 9.4, "calitate": "Rebounder" },
+        { "tip": "Fundas", "nume": "Davion Mitchell", "varsta": 26, "rating": 2, "ppg": 6.9, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Jonathan Mogbo", "varsta": 23, "rating": 2, "ppg": 4.1, "calitate": "Rebounder" }
+      ]
+    },
+    {
+      "nume": "Utah Jazz",
+      "jucatori": [
+        { "tip": "Extrema", "nume": "Lauri Markkanen", "varsta": 27, "rating": 4, "ppg": 18.0, "calitate": "Rebounder" },
+        { "tip": "Fundas", "nume": "Collin Sexton", "varsta": 26, "rating": 4, "ppg": 18.4, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Taylor Hendricks", "varsta": 21, "rating": 3, "ppg": 7.3, "calitate": "Interior Defence" },
+        { "tip": "Fundas", "nume": "Keyonte George", "varsta": 21, "rating": 3, "ppg": 13.0, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Walker Kessler", "varsta": 23, "rating": 3, "ppg": 10.8, "calitate": "Interior Defence" },
+        { "tip": "Extrema", "nume": "John Collins", "varsta": 27, "rating": 3, "ppg": 17.8, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Cody Williams", "varsta": 20, "rating": 2, "ppg": 3.4, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Jordan Clarkson", "varsta": 32, "rating": 3, "ppg": 15.8, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Drew Eubanks", "varsta": 28, "rating": 2, "ppg": 7.5, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Brice Sensabaugh", "varsta": 22, "rating": 2, "ppg": 6.4, "calitate": "Perimeter Defence" }
+      ]
+    },
+    {
+      "nume": "Washington Wizards",
+      "jucatori": [
+        { "tip": "Extrema", "nume": "Kyle Kuzma", "varsta": 29, "rating": 4, "ppg": 15.8, "calitate": "Rebounder" },
+        { "tip": "Fundas", "nume": "Jordan Poole", "varsta": 25, "rating": 4, "ppg": 21.1, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Jonas Valanciunas", "varsta": 32, "rating": 3, "ppg": 11.4, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Bilal Coulibaly", "varsta": 20, "rating": 3, "ppg": 12.1, "calitate": "Perimeter Defence" },
+        { "tip": "Extrema", "nume": "Alexandre Sarr", "varsta": 19, "rating": 3, "ppg": 10.4, "calitate": "Interior Defence" },
+        { "tip": "Fundas", "nume": "Bub Carrington", "varsta": 19, "rating": 2, "ppg": 6.0, "calitate": "Playmaker" },
+        { "tip": "Extrema", "nume": "Corey Kispert", "varsta": 25, "rating": 3, "ppg": 8.3, "calitate": "Perimeter Defence" },
+        { "tip": "Fundas", "nume": "Malcolm Brogdon", "varsta": 32, "rating": 3, "ppg": 15.7, "calitate": "Playmaker" },
+        { "tip": "Centru", "nume": "Marvin Bagley III", "varsta": 26, "rating": 2, "ppg": 11.7, "calitate": "Rebounder" },
+        { "tip": "Extrema", "nume": "Carlton Carrington", "varsta": 19, "rating": 2, "ppg": 5.9, "calitate": "Perimeter Defence" }
+      ]
+    }
+
+  ]
