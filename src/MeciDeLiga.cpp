@@ -1,7 +1,7 @@
 //
 // Created by Luca on 5/24/2025.
 //
-#include "D:/Proiect-OOP---CampionatBaschet/include/MeciDeLiga.h"
+#include "MeciDeLiga.h"
 #include <iostream>
 
 MeciDeLiga::MeciDeLiga(const std::shared_ptr<Echipa>& echipa1, const std::shared_ptr<Echipa>& echipa2)

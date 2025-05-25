@@ -2,7 +2,7 @@
 // Created by Luca on 5/24/2025.
 //
 
-#include "D:/Proiect-OOP---CampionatBaschet/include/Centru.h"
+#include "Centru.h"
 #include <iostream>
 
 Centru::Centru(const std::string& nume, int varsta, int rating, double mediePuncteMeci, const std::string& calitate)

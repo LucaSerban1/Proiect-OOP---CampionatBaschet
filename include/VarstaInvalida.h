@@ -5,6 +5,7 @@
 #ifndef VARSTAINVALIDA_H
 #define VARSTAINVALIDA_H
 
+#pragma once
 #include <exception>
 
 class VarstaInvalida : public std::exception {

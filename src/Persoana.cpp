@@ -3,7 +3,7 @@
 //
 #include <string>
 
-#include "D:/Proiect-OOP---CampionatBaschet/include/Persoana.h"
+#include "Persoana.h"
 
 Persoana::Persoana(const std::string& nume, int varsta) {
     Nume = nume;

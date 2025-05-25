@@ -2,7 +2,7 @@
 // Created by Luca on 5/24/2025.
 //
 
-#include "D:/Proiect-OOP---CampionatBaschet/include/Extrema.h"
+#include "Extrema.h"
 #include <iostream>
 
 Extrema::Extrema(const std::string& nume, int varsta, int rating, double mediePuncteMeci, const std::string& calitate)

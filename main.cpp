@@ -66,7 +66,7 @@ using json = nlohmann::json;
 
 int main() {
 
-    std::ifstream fin("d:\\Proiect-OOP---CampionatBaschet\\echipe.json");
+    std::ifstream fin("echipe.json");
     if (!fin.is_open()) {
         std::cout << "Nu s-a putut deschide fisierul JSON!\n";
         return 0;

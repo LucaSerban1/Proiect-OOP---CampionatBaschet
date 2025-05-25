@@ -2,13 +2,12 @@
 // Created by Luca on 5/24/2025.
 //
 
-#pragma once
-#include "D:/Proiect-OOP---CampionatBaschet/include/Echipa.h"
-#include "D:/Proiect-OOP---CampionatBaschet/include/Jucator.h"
-#include "D:/Proiect-OOP---CampionatBaschet/include/Fundas.h"
-#include "D:/Proiect-OOP---CampionatBaschet/include/Extrema.h"
-#include "D:/Proiect-OOP---CampionatBaschet/include/Centru.h"
-#include "D:/Proiect-OOP---CampionatBaschet/include/VarstaInvalida.h"
+#include "Echipa.h"
+#include "Jucator.h"
+#include "Fundas.h"
+#include "Extrema.h"
+#include "Centru.h"
+#include "VarstaInvalida.h"
 #include <iostream>
 
 

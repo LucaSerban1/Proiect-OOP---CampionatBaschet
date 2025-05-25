@@ -2,7 +2,7 @@
 // Created by Luca on 5/24/2025.
 //
 
-#include "D:/Proiect-OOP---CampionatBaschet/include/Campionat.h"
+#include "Campionat.h"
 
 void Campionat::adaugaEchipa(const std::shared_ptr<Echipa>& echipa) {
     echipe.push_back(echipa);

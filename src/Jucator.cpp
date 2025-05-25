@@ -2,8 +2,8 @@
 // Created by Luca on 5/24/2025.
 //
 
-#include "D:/Proiect-OOP---CampionatBaschet/include/Jucator.h"
-#include "D:/Proiect-OOP---CampionatBaschet/include/VarstaInvalida.h"
+#include "Jucator.h"
+#include "VarstaInvalida.h"
 
 Jucator::Jucator(const std::string& nume, int varsta, int rating, double mediePuncteMeci)
     : Persoana(nume, varsta){
