@@ -105,7 +105,7 @@ int Jucator::getRating() const {return Rating;}
 
 double Jucator::getMediePuncteMeci() const {return MediePuncteMeci;}
 
-void Jucator::setMediePuncteMeci(double mediepunctemeci) {\
+void Jucator::setMediePuncteMeci(double mediepunctemeci) {
     try{
         if (mediepunctemeci < 0) throw DateInvalide();
     } catch (const DateInvalide& ex) {
