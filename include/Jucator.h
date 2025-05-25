@@ -32,7 +32,12 @@ public:
     int getRating() const;
     double getMediePuncteMeci() const;
     void setMediePuncteMeci(double mediepunctemeci);
+    
+    
+    friend bool operator<(const Jucator& j1, const Jucator& j2);
 };
+
+
 
 #endif // JUCATOR_H
 

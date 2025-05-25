@@ -61,6 +61,7 @@
 #include "include/Centru.h"
 #include "include/Echipa.h"
 #include "include/Campionat.h"
+#include "include/DateInvalide.h"
 
 using json = nlohmann::json;
 
@@ -85,7 +86,8 @@ int main() {
         std::cout << "Afiseaza clasamentul: 3\n";
         std::cout << "Afiseaza echipele: 4\n";
         std::cout << "Introdu manual o echipa: 5\n";
-        std::cout << "Iesire: 6\n";
+        std::cout << "Comparare jucatori din aceeasi echipa: 6\n";
+        std::cout << "Iesire: 7\n";
         std::cin >> Alegeri;
         if (Alegeri == 1) {
             int numarEchipe = 0;
@@ -131,7 +133,72 @@ int main() {
             e1.setPuncteCampionat(0);
             c1.adaugaEchipa(std::make_shared<Echipa>(e1));
         }
-        if (Alegeri == 6) {
+        if (Alegeri ==6)
+        {
+            std::string numeEchipa1;
+            std::cout << "Introdu numele echipei: ";
+            std::getline(std::cin >> std::ws, numeEchipa1);
+            std::shared_ptr<Echipa> e1;
+            try{
+                bool found = false;
+                for(const auto& e : c1.getEchipe()) {
+                    if(numeEchipa1 == e->getNume()){
+                        found = true;
+                        break;
+                    }
+                }
+                if(!found) {
+                    throw DateInvalide();
+                }   
+            } catch (const DateInvalide& ex) {
+                std::cerr << ex.what() << "\n";
+                continue;
+            }
+            std::shared_ptr<Jucator> j1;
+            std::shared_ptr<Jucator> j2;
+            std::cout << "Introdu numele primului jucator: ";
+            std::string numeJucator1;
+            std::getline(std::cin >> std::ws, numeJucator1);
+            try{
+                bool found = false;
+                for(const auto& jucator : e1->getJucatori()) {
+                    if(numeJucator1 == jucator->getNume()){
+                        found = true;
+                        break;
+                    }
+                }
+                if(!found) {
+                    throw DateInvalide();
+                }   
+            } catch (const DateInvalide& ex) {
+                std::cerr << ex.what() << "\n";
+                continue;
+            }
+            std::cout << "Introdu numele celui de-al doilea jucator: ";
+            std::string numeJucator2;
+            std::getline(std::cin >> std::ws, numeJucator2);
+            try{
+                bool found = false;
+                for(const auto& jucator : e1->getJucatori()) {
+                    if(numeJucator2 == jucator->getNume()){
+                        found = true;
+                        break;
+                    }
+                }
+                if(!found) {
+                    throw DateInvalide();
+                }   
+            } catch (const DateInvalide& ex) {
+                std::cerr << ex.what() << "\n";
+                continue;
+            }
+            std::shared_ptr<Jucator> jucator1 = e1->getJucatorDupaNume(numeJucator1);
+            std::shared_ptr<Jucator> jucator2 = e1->getJucatorDupaNume(numeJucator2);
+            if (jucator1 < jucator2)std::cout << "Jucatorul " << jucator1->getNume() << " este mai bun decat " << jucator2->getNume() << "\n";
+            else if (jucator1 > jucator2)std::cout << "Jucatorul " << jucator2->getNume() << " este mai bun decat " << jucator1->getNume() << "\n";
+            else std::cout << "Jucatorii sunt egali ca performanta.\n";
+        }
+        if (Alegeri == 7) {
             std::cout << "Ai simulat campionatul cu succes!\n";
             ok=0;
         }

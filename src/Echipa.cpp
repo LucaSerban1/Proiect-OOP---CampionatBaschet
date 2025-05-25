@@ -18,28 +18,25 @@ Echipa::Echipa(const std::string& nume) {
     PuncteCampionat = 0;
 }
 
-const std::vector<std::shared_ptr<Jucator>>& Echipa::getJucatori() const {
-    return j;
-}
+const std::vector<std::shared_ptr<Jucator>>& Echipa::getJucatori() const {return j;}
 
-std::string Echipa::getNume() const {
-    return Nume;
-}
+std::string Echipa::getNume() const {return Nume;}
 
-void Echipa::setNume(std::string nume) {
-    Nume = std::move(nume);
-}
+void Echipa::setNume(std::string nume) {Nume = std::move(nume);}
 
-int Echipa::getPuncteCampionat() const {
-    return PuncteCampionat;
-}
+int Echipa::getPuncteCampionat() const {return PuncteCampionat;}
 
-void Echipa::setPuncteCampionat(int puncte) {
-    PuncteCampionat = puncte;
-}
+void Echipa::setPuncteCampionat(int puncte) {PuncteCampionat = puncte;}
 
-void Echipa::adaugaJucator(const std::shared_ptr<Jucator>& jucator) {
-    j.push_back(jucator);
+void Echipa::adaugaJucator(const std::shared_ptr<Jucator>& jucator) {j.push_back(jucator);}
+
+std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string& nume){
+    for (const auto& jucator : j) {
+        if (jucator->getNume() == nume) {
+            return jucator;
+        }
+    }
+    return nullptr; // Return null if no team found
 }
 
 void Echipa::afiseazaEchipa() const {

@@ -12,6 +12,15 @@ const std::vector<std::shared_ptr<Echipa>>& Campionat::getEchipe() const {
     return echipe;
 }
 
+std::shared_ptr<Echipa> Campionat::getEchipaDupaNume(const std::string& nume)const{
+    for (const auto& echipa : echipe)
+    {
+        if (echipa->getNume() == nume) {
+            return echipa;
+        }
+    }
+}
+
 void Campionat::genereazaMeciuri() {
     for (size_t i = 0; i < echipe.size(); ++i) {
         for (size_t j = i + 1; j < echipe.size(); ++j) {

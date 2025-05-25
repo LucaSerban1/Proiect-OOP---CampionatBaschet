@@ -30,6 +30,7 @@ public:
     int getPuncteCampionat() const;
     void setPuncteCampionat(int puncte);
     void adaugaJucator(const std::shared_ptr<Jucator>& jucator);
+    std::shared_ptr<Jucator> getJucatorDupaNume(const std::string& nume);
 
     void afiseazaEchipa() const;
     std::pair<int, std::string> SimuleazaMeci() const;

@@ -21,6 +21,7 @@ private:
 public:
     void adaugaEchipa(const std::shared_ptr<Echipa>& echipa);
     const std::vector<std::shared_ptr<Echipa>>& getEchipe() const;
+    std::shared_ptr<Echipa> getEchipaDupaNume(const std::string& nume) const;
 
     void genereazaMeciuri();
     void simuleazaCampionat();

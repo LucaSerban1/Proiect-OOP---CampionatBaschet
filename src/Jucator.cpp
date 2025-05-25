@@ -105,3 +105,14 @@ int Jucator::getRating() const {return Rating;}
 double Jucator::getMediePuncteMeci() const {return MediePuncteMeci;}
 
 void Jucator::setMediePuncteMeci(double mediepunctemeci) {MediePuncteMeci = mediepunctemeci;}
+
+bool operator<(const Jucator& j1, const Jucator& j2) {
+    if (j2.getRating() < j1.getRating()) return true;
+    else if (j2.getRating() == j1.getRating()) {
+        if (j2.getMediePuncteMeci() < j1.getMediePuncteMeci()) return true;
+        else if (j1.getMediePuncteMeci() == j2.getMediePuncteMeci())
+            return j2.getVarsta() < j1.getVarsta();
+        else return false;
+    }
+}
+
