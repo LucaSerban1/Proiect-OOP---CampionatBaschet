@@ -71,6 +71,19 @@ std::pair<int, std::string> Echipa::SimuleazaMeci() const {
 void Echipa::adaugaScorMeci(int scor) {statisticaPuncte.adaugaValoare(scor);}
 void Echipa::adaugaMvpJucator(const std::string& nume) {statisticaMvpJucatori.adaugaValoare(nume);}
 
+void Echipa::afiseazaMvpMeci(){
+    std::cout << "MVP meciurilor echipei " << Nume << ":\n";
+    if (statisticaMvpJucatori.getValori().empty()) {
+        std::cout << "Nu exista MVP pentru echipa.\n";
+        return;
+    }
+    int i = 0;
+    for (const auto& p : statisticaMvpJucatori.getValori()) {
+        std::cout << "In meciul nr " << ++i << " MVP-ul a fost " << p << "\n";
+    }
+    std::cout << "\n";
+}
+
 void Echipa::afiseazaPuncteMeci() {
     std::cout << "Scoruri meciuri echipa " << Nume << ":\n";
 
@@ -82,19 +95,6 @@ void Echipa::afiseazaPuncteMeci() {
     int i = 0;
     for (const auto& p : statisticaPuncte.getValori()) {
         std::cout << "In meciul nr " << ++i << " echipa a inscris " << p << " puncte.\n";
-    }
-    std::cout << "\n";
-}
-
-void Echipa::afiseazaPuncteMeci(){
-    std::cout << "Scoruri meciuri echipa " << Nume << ":\n";
-    if (statisticaPuncte.getValori().empty()) {
-        std::cout << "Nu exista scoruri pentru meciurile echipei.\n";
-        return;
-    }
-    int i=0;
-    for (const auto& p : statisticaPuncte.getValori()) {
-        std::cout << "In meciul nr "<< ++i << " echipa a inscris " << p << " puncte.\n";
     }
     std::cout << "\n";
 }
