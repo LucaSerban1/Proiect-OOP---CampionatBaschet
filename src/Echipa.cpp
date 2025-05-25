@@ -7,7 +7,7 @@
 #include "Fundas.h"
 #include "Extrema.h"
 #include "Centru.h"
-#include "VarstaInvalida.h"
+#include "DateInvalide.h"
 #include <iostream>
 
 
@@ -77,6 +77,14 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
     int nrjucatori;
     std::cout << "Numar jucatori: ";
     in >> nrjucatori;
+    try {
+        if (nrjucatori < 1 || nrjucatori > 10) {
+            throw DateInvalide();
+        }
+    } catch (const DateInvalide& ex) {
+        std::cerr << ex.what() << "\n";
+        return in;
+    }
 
     for (int i = 0; i < nrjucatori; ++i) {
         std::string numejucator, pozitie, calitate;
@@ -86,37 +94,93 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
         std::cout << "Introdu numele jucatorului " << i + 1 << ": ";
         std::getline(in >> std::ws, numejucator);
 
-        std::cout << "Pozitia: ";
+        std::cout << "Pozitia (Fundas/Extrema/Centru): ";
         std::getline(in >> std::ws, pozitie);
+        try {
+            if (pozitie != "Fundas" && pozitie != "Extrema" && pozitie != "Centru") {
+                throw DateInvalide();
+            }
+        } catch (const DateInvalide& ex) {
+            std::cerr << ex.what() << "\n";
+            --i;
+            continue;
+        }
 
         std::cout << "Varsta: ";
         in >> varsta;
+        try{
+            if (varsta < 18 || varsta > 40) {
+                throw DateInvalide();
+            }
+        } catch (const DateInvalide& ex) {
+            std::cerr << ex.what() << "\n";
+            --i;
+            continue;
+        }
 
         std::cout << "Rating (trebuie sa fie intre 1 si 5): ";
         in >> rating;
+        try{
+            if(rating < 1 || rating > 5) {
+                throw DateInvalide();
+            }
+        }catch (const DateInvalide& ex) {
+            std::cerr << ex.what() << "\n";
+            --i;
+            continue;
+        }
 
         std::cout << "Medie puncte pe meci: ";
         in >> ppg;
 
-        if (pozitie == "Fundas") std::cout << "Calitate poate fi Playmaker sau Perimeter Defence: ";
-        else if (pozitie == "Extrema") std::cout << "Calitate poate fi Interior Defence sau Perimeter Defence: ";
-        else if (pozitie == "Centru") std::cout << "Calitate poate fi Interior Defence sau Rebounder: ";
-
-        std::getline(in >> std::ws, calitate);
+        if (pozitie == "Fundas") {
+            std::cout << "Calitate poate fi Playmaker sau Perimeter Defence: ";
+            std::getline(in >> std::ws, calitate);
+            try{
+                if (calitate != "Playmaker" && calitate != "Perimeter Defence") {
+                    throw DateInvalide();
+                }
+            } catch (const DateInvalide& ex) {
+                std::cerr << ex.what() << "\n";
+                --i;
+                continue;
+            }
+        }
+        else if (pozitie == "Extrema") {
+            std::cout << "Calitate poate fi Interior Defence sau Perimeter Defence: ";
+            std::getline(in >> std::ws, calitate);
+            try{
+                if (calitate != "Interior Defence" && calitate != "Perimeter Defence") {
+                    throw DateInvalide();
+                }
+            } catch (const DateInvalide& ex) {
+                std::cerr << ex.what() << "\n";
+                --i;
+                continue;
+            }
+        }
+        else if (pozitie == "Centru") {
+            std::cout << "Calitate poate fi Interior Defence sau Rebounder: ";
+            std::getline(in >> std::ws, calitate);
+            try{
+                if (calitate != "Rebounder" && calitate != "Interior Defence") {
+                    throw DateInvalide();
+                }
+            } catch (const DateInvalide& ex) {
+                std::cerr << ex.what() << "\n";
+                --i;
+                continue;
+            }
+        }
 
         std::shared_ptr<Jucator> jucator;
-        try {
-            if (pozitie == "Fundas")
-                jucator = std::make_shared<Fundas>(numejucator, varsta, rating, ppg, calitate);
-            else if (pozitie == "Extrema")
-                jucator = std::make_shared<Extrema>(numejucator, varsta, rating, ppg, calitate);
-            else if (pozitie == "Centru")
-                jucator = std::make_shared<Centru>(numejucator, varsta, rating, ppg, calitate);
-            else
-                throw std::invalid_argument("Pozitia nu este valida!");
-        } catch (const std::exception& ex) {
-            std::cerr << "Eroare: " << ex.what() << "\n";
-        }
+        if (pozitie == "Fundas")
+            jucator = std::make_shared<Fundas>(numejucator, varsta, rating, ppg, calitate);
+        else if (pozitie == "Extrema")
+            jucator = std::make_shared<Extrema>(numejucator, varsta, rating, ppg, calitate);
+        else if (pozitie == "Centru")
+            jucator = std::make_shared<Centru>(numejucator, varsta, rating, ppg, calitate);
+
 
         if (jucator != nullptr)
             e.adaugaJucator(jucator);

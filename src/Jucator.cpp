@@ -3,13 +3,13 @@
 //
 
 #include "Jucator.h"
-#include "VarstaInvalida.h"
+#include "DateInvalide.h"
 
-Jucator::Jucator(const std::string& nume, int varsta, int rating, double mediePuncteMeci)
+Jucator::Jucator(const std::string& nume, int varsta, int rating, double mediepunctemeci)
     : Persoana(nume, varsta){
-        rating = rating;
-        MediePuncteMeci = mediePuncteMeci;
-    if (varsta < 18) throw VarstaInvalida();
+        Rating = rating;
+        MediePuncteMeci = mediepunctemeci;
+    if (varsta < 18) throw DateInvalide();
 }
 
 bool Jucator::SimuleazaSanse() const {
@@ -96,22 +96,12 @@ int Jucator::SimuleazaBlocksMeci() const {
     }
 }
 
-std::string Jucator::getNume() const {
-    return Nume;
-}
+std::string Jucator::getNume() const {return Nume;}
 
-int Jucator::getVarsta() const {
-    return Varsta;
-}
+int Jucator::getVarsta() const {return Varsta;}
 
-int Jucator::getRating() const {
-    return Rating;
-}
+int Jucator::getRating() const {return Rating;}
 
-double Jucator::getMediePuncteMeci() const {
-    return MediePuncteMeci;
-}
+double Jucator::getMediePuncteMeci() const {return MediePuncteMeci;}
 
-void Jucator::setMediePuncteMeci(double mediePuncteMeci) {
-    MediePuncteMeci = mediePuncteMeci;
-}
+void Jucator::setMediePuncteMeci(double mediepunctemeci) {MediePuncteMeci = mediepunctemeci;}

@@ -31,7 +31,7 @@ public:
     int getVarsta() const;
     int getRating() const;
     double getMediePuncteMeci() const;
-    void setMediePuncteMeci(double mediePuncteMeci);
+    void setMediePuncteMeci(double mediepunctemeci);
 };
 
 #endif // JUCATOR_H
