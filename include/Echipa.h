@@ -26,7 +26,6 @@ private:
 public:
     Echipa();
     Echipa(const std::string& nume);
-
     const std::vector<std::shared_ptr<Jucator>>& getJucatori() const;
     std::string getNume() const;
     void setNume(std::string nume);
