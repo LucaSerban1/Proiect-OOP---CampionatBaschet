@@ -23,6 +23,7 @@ std::shared_ptr<Echipa> Campionat::getEchipaDupaNume(const std::string& nume)con
             return echipa;
         }
     }
+    return nullptr;
 }
 
 void Campionat::genereazaMeciuri() {

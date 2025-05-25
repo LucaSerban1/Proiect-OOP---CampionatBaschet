@@ -114,5 +114,6 @@ bool operator<(const Jucator& j1, const Jucator& j2) {
             return j2.getVarsta() < j1.getVarsta();
         else return false;
     }
+    else return false;
 }
 
