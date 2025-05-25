@@ -110,7 +110,9 @@ void Jucator::setMediePuncteMeci(double mediepunctemeci) {
         if (mediepunctemeci < 0) throw DateInvalide();
     } catch (const DateInvalide& ex) {
         std::cerr << "Eroare: " << ex.what() << "\n";
+        MediePuncteMeci = 0;
         return;
+
     }
     MediePuncteMeci = mediepunctemeci;}
 
