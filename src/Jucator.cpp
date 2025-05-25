@@ -105,16 +105,7 @@ int Jucator::getRating() const {return Rating;}
 
 double Jucator::getMediePuncteMeci() const {return MediePuncteMeci;}
 
-void Jucator::setMediePuncteMeci(double mediepunctemeci) {
-    try{
-        if (mediepunctemeci < 0) throw DateInvalide();
-    } catch (const DateInvalide& ex) {
-        std::cerr << "Eroare: " << ex.what() << "\n";
-        MediePuncteMeci = 0;
-        return;
 
-    }
-    MediePuncteMeci = mediepunctemeci;}
 
 bool operator<(const Jucator& j1, const Jucator& j2) {
     if (j2.getRating() < j1.getRating()) return true;
