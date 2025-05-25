@@ -7,7 +7,7 @@
 
 #pragma once
 #include <memory>
-#include "Meci.h"   // presupunem că clasa de bază Meci este definită aici
+#include "Meci.h"   
 
 class MeciDeLiga : public Meci {
 public:

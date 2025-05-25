@@ -18,6 +18,9 @@ Echipa::Echipa(const std::string& nume) {
     PuncteCampionat = 0;
 }
 
+Statistica<int>& Echipa::getStatisticaPuncte() { return statisticaPuncte; }
+Statistica<std::string>& Echipa::getStatisticaMvpJucatori()  { return statisticaMvpJucatori; }
+
 const std::vector<std::shared_ptr<Jucator>>& Echipa::getJucatori() const {return j;}
 
 std::string Echipa::getNume() const {return Nume;}
@@ -63,6 +66,27 @@ std::pair<int, std::string> Echipa::SimuleazaMeci() const {
 
     std::cout << "Echipa " << Nume << " a marcat " << punctemeci << " puncte in meci.\n";
     return {punctemeci, MVP};
+}
+
+void Echipa::adaugaScorMeci(int scor) {statisticaPuncte.adaugaValoare(scor);}
+void Echipa::adaugaMvpJucator(const std::string& nume) {statisticaMvpJucatori.adaugaValoare(nume);}
+
+void Echipa::afiseazaMvpMeci(){
+    std::cout << "MVP meciurilor echipei " << Nume << ":\n";
+    int i = 0;
+    for (const auto& p : statisticaMvpJucatori.getValori()) {
+        std::cout << "In meciul nr " << ++i << " MVP-ul a fost " << p << "\n";
+    }
+    std::cout << "\n";
+}
+
+void Echipa::afiseazaPuncteMeci(){
+    std::cout << "Scoruri meciuri echipa " << Nume << ":\n";
+    int i=0;
+    for (const auto& p : statisticaPuncte.getValori()) {
+        std::cout << "In meciul nr "<< ++i << " echipa a inscris " << p << " puncte.\n";
+    }
+    std::cout << "\n";
 }
 
 std::istream& operator>>(std::istream& in, Echipa& e) {

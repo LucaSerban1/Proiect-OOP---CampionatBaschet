@@ -13,7 +13,11 @@ void MeciDeLiga::Simuleaza() {
     auto [puncteechipa1, MVPechipa1] = Echipa1->SimuleazaMeci();
     std::cout << "\n";
     auto [puncteechipa2, MVPechipa2] = Echipa2->SimuleazaMeci();
-
+    
+    Echipa1->adaugaScorMeci(puncteechipa1);
+    Echipa2->adaugaScorMeci(puncteechipa2);
+    Echipa1->adaugaMvpJucator(MVPechipa1);
+    Echipa2->adaugaMvpJucator(MVPechipa2);
     if (puncteechipa1 > puncteechipa2) {
         std::cout << Echipa1->getNume() << " a castigat meciul cu scorul de " << puncteechipa1 << " - " << puncteechipa2 << "!\n";
         std::cout << "Mvp-ul meciului este " << MVPechipa1 << "!\n";
