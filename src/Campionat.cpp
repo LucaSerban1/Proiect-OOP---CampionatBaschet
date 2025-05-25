@@ -8,6 +8,10 @@ void Campionat::adaugaEchipa(const std::shared_ptr<Echipa>& echipa) {
     echipe.push_back(echipa);
 }
 
+int Campionat::getPunctetotal() { return punctetotal; }
+void Campionat::setPunctetotal(int puncte1, int puncte2) { punctetotal = puncte1+puncte2; }
+int Campionat::punctetotal = 0;
+
 const std::vector<std::shared_ptr<Echipa>>& Campionat::getEchipe() const {
     return echipe;
 }

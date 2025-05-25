@@ -2,10 +2,12 @@
 // Created by Luca on 5/24/2025.
 //
 #include "MeciDeLiga.h"
+#include "Campionat.h"
 #include <iostream>
 
 MeciDeLiga::MeciDeLiga(const std::shared_ptr<Echipa>& echipa1, const std::shared_ptr<Echipa>& echipa2)
     : Meci(echipa1, echipa2) {}
+
 
 void MeciDeLiga::Simuleaza() {
     std::cout << "Echipa: " << Echipa1->getNume() << " joaca impotriva echipei: " << Echipa2->getNume() << "\n";
@@ -18,6 +20,9 @@ void MeciDeLiga::Simuleaza() {
     Echipa2->adaugaScorMeci(puncteechipa2);
     Echipa1->adaugaMvpJucator(MVPechipa1);
     Echipa2->adaugaMvpJucator(MVPechipa2);
+    Campionat c1;
+    
+    c1.setPunctetotal(c1.getPunctetotal(),puncteechipa1 + puncteechipa2);
     if (puncteechipa1 > puncteechipa2) {
         std::cout << Echipa1->getNume() << " a castigat meciul cu scorul de " << puncteechipa1 << " - " << puncteechipa2 << "!\n";
         std::cout << "Mvp-ul meciului este " << MVPechipa1 << "!\n";

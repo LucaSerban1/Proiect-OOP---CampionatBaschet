@@ -123,6 +123,7 @@ int main() {
         }
         if (Alegeri == 3)
             c1.afiseazaClasament();
+            
         if (Alegeri == 4) {
             for (const auto& e: c1.getEchipe()) {
                 std::cout << e << "\n";
@@ -223,8 +224,10 @@ int main() {
             }
             echipa->afiseazaPuncteMeci();
             echipa->afiseazaMvpMeci();
+
         }
         if (Alegeri == 8) {
+            std::cout << "In acest campionat s-au inscris " << c1.getPunctetotal() << " puncte.\n";
             std::cout << "Ai simulat campionatul cu succes!\n";
             ok=0;
         }

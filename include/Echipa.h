@@ -22,6 +22,7 @@ private:
     int PuncteCampionat;
     Statistica<int> statisticaPuncte;
     Statistica<std::string> statisticaMvpJucatori;
+    static int punctetotal;
 public:
     Echipa();
     Echipa(const std::string& nume);
@@ -43,7 +44,7 @@ public:
     void adaugaMvpJucator(const std::string& nume);
 
     void afiseazaMvpMeci();
-    void afiseazaPuncteMeci();
+    void afiseazaPuncteMeci();  
 
     friend std::istream& operator>>(std::istream& in, Echipa& e);
     friend std::ostream& operator<<(std::ostream& out, const std::shared_ptr<Echipa> &e);
