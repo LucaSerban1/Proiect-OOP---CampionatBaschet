@@ -42,9 +42,6 @@ public:
     void adaugaScorMeci(int scor);
     void adaugaMvpJucator(const std::string& nume);
 
-    void afiseazaMvpMeci();
-    void afiseazaPuncteMeci();  
-
     friend std::istream& operator>>(std::istream& in, Echipa& e);
     friend std::ostream& operator<<(std::ostream& out, const std::shared_ptr<Echipa> &e);
 

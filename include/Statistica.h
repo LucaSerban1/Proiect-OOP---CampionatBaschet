@@ -23,9 +23,12 @@ public:
         return static_cast<int>(valori.size());
     }
 
-    const std::vector<T>& getValori() const {  
+    std::vector<int> getValorint() const {
         return valori;
     }
+
+    std::vector<std::string> getValoriString(){
+        return valori;}
 };
 
 
