@@ -87,8 +87,7 @@ int main() {
         std::cout << "Afiseaza echipele: 4\n";
         std::cout << "Introdu manual o echipa: 5\n";
         std::cout << "Comparare jucatori din aceeasi echipa: 6\n";
-        std::cout << "Afisare statistici pt o echipa (vezi MVP, puncte): 7\n";
-        std::cout << "Iesire: 8\n";
+        std::cout << "Iesire: 7\n";
         std::cin >> Alegeri;
         if (Alegeri == 1) {
             int numarEchipe = 0;
@@ -200,33 +199,7 @@ int main() {
             else if (jucator1 > jucator2)std::cout << "Jucatorul " << jucator2->getNume() << " este mai bun decat " << jucator1->getNume() << "\n";
             else std::cout << "Jucatorii sunt egali ca performanta.\n";
         }
-        if (Alegeri == 7)
-        {
-            std::string numeEchipa;
-            std::cout << "Introdu numele echipei: ";
-            std::getline(std::cin >> std::ws, numeEchipa);
-            std::shared_ptr<Echipa> echipa;
-            try{
-                bool found = false;
-                for(const auto& e : c1.getEchipe()) {
-                    if(numeEchipa == e->getNume()){
-                        found = true;
-                        echipa = e;
-                        break;
-                    }
-                }
-                if(!found) {
-                    throw DateInvalide();
-                }   
-            } catch (const DateInvalide& ex) {
-                std::cerr << ex.what() << "\n";
-                continue;
-            }
-            echipa->afiseazaPuncteMeci();
-            echipa->afiseazaMvpMeci();
-
-        }
-        if (Alegeri == 8) {
+        if (Alegeri == 7) {
             std::cout << "In acest campionat s-au inscris " << c1.getPunctetotal() << " puncte.\n";
             std::cout << "Ai simulat campionatul cu succes!\n";
             ok=0;

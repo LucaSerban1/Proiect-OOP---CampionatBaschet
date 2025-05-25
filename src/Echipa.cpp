@@ -48,8 +48,10 @@ std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string& nume){
 void Echipa::afiseazaEchipa() const {
     std::cout << "Echipa: " << Nume << " cu " << j.size() << " jucatori:\n";
     for (const auto& jucator : j) {
-        std::cout << jucator->getNume() << " are rating " << jucator->getRating()
-                  << " si inscrie " << jucator->getMediePuncteMeci() << " puncte pe meci.\n";
+        if (jucator) {
+            std::cout << jucator->getNume() << " are rating " << jucator->getRating()
+                      << " si inscrie " << jucator->getMediePuncteMeci() << " puncte pe meci.\n";
+        } 
     }
 }
 
@@ -73,8 +75,6 @@ std::pair<int, std::string> Echipa::SimuleazaMeci() const {
 
 void Echipa::adaugaScorMeci(int scor) {statisticaPuncte.adaugaValoare(scor);}
 void Echipa::adaugaMvpJucator(const std::string& nume) {statisticaMvpJucatori.adaugaValoare(nume);}
-
-
 
 std::istream& operator>>(std::istream& in, Echipa& e) {
     std::string nume;
