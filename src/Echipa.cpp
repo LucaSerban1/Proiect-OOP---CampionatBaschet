@@ -16,10 +16,13 @@ Echipa::Echipa() = default;
 Echipa::Echipa(const std::string& nume) {
     Nume = nume;
     PuncteCampionat = 0;
+    statisticaPuncte = Statistica<int>();
+    statisticaMvpJucatori = Statistica<std::string>();
 }
 
-Statistica<int>& Echipa::getStatisticaPuncte() { return statisticaPuncte; }
-Statistica<std::string>& Echipa::getStatisticaMvpJucatori()  { return statisticaMvpJucatori; }
+
+Statistica<int> Echipa::getStatisticaPuncte() { return statisticaPuncte; }
+Statistica<std::string> Echipa::getStatisticaMvpJucatori()  { return statisticaMvpJucatori; }
 
 const std::vector<std::shared_ptr<Jucator>>& Echipa::getJucatori() const {return j;}
 
