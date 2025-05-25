@@ -3,6 +3,9 @@
 //
 #include "DateInvalide.h"
 
-const char* DateInvalide::what() const noexcept {
-    return "Date de intrare invalide! Verifica datele introduse si incearca din nou.";
-}
+class DateInvalide : public std::exception {
+public:
+    const char* what() const noexcept override {
+        return "Date invalide: valoarea trebuie să fie pozitivă.";
+    }
+};
