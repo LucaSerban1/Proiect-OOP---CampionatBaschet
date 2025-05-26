@@ -10,7 +10,7 @@
 
 class Centru : public Jucator {
 private:
-    std::string Calitate;
+    std::string Calitate = "";
 
 public:
     Centru(const std::string& nume, int varsta, int rating, double mediePuncteMeci, const std::string& calitate);

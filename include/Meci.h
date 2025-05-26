@@ -12,8 +12,8 @@
 
 class Meci {
 protected:
-    std::shared_ptr<Echipa> Echipa1;
-    std::shared_ptr<Echipa> Echipa2;
+    std::shared_ptr<Echipa> Echipa1 = nullptr;
+    std::shared_ptr<Echipa> Echipa2 = nullptr;
 
 public:
     Meci(const std::shared_ptr<Echipa>& echipa1, const std::shared_ptr<Echipa>& echipa2);

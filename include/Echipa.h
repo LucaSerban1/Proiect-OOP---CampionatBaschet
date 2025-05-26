@@ -25,7 +25,7 @@ private:
     static int punctetotal;
 public:
     Echipa();
-    Echipa(const std::string& nume);
+    explicit Echipa(const std::string& nume);
     const std::vector<std::shared_ptr<Jucator>>& getJucatori() const;
     const std::string getNume() const;
     void setNume(std::string nume);

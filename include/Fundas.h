@@ -12,7 +12,7 @@
 
 class Fundas : public Jucator {
 private:
-    std::string Calitate;
+    std::string Calitate = "";
 
 public:
     Fundas(const std::string& nume, int varsta, int rating, double mediePuncteMeci, const std::string& calitate);

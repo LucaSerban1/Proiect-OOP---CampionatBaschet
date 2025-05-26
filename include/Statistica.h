@@ -23,11 +23,11 @@ public:
     //     return static_cast<int>(valori.size());
     // }
 
-    std::vector<int> getValorint() const {
+    const std::vector<int> getValorint() const {
         return valori;
     }
 
-    std::vector<std::string> getValoriString() const{
+    const std::vector<std::string> getValoriString() const{
         return valori;}
 };
 

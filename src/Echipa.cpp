@@ -13,7 +13,7 @@
 
 Echipa::Echipa() = default;
 
-Echipa::Echipa(const std::string &nume)
+explicit Echipa::Echipa(const std::string &nume)
 {
     Nume = nume;
 }

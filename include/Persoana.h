@@ -10,7 +10,7 @@
 
 class Persoana {
 protected:
-    std::string Nume;
+    std::string Nume = "";
     int Varsta;
 public:
     Persoana(const std::string& nume, int varsta);

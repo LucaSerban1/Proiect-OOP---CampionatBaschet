@@ -10,7 +10,7 @@
 
 class Extrema : public Jucator {
 private:
-    std::string Calitate;
+    std::string Calitate = "";
 public:
     Extrema(const std::string& nume, int varsta, int rating, double mediePuncteMeci, const std::string& calitate);
     int Performanta(int puncte) const override;

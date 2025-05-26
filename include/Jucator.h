@@ -27,7 +27,7 @@ public:
 
     virtual int Performanta(int puncte) const = 0;
 
-    std::string getNume() const;
+    const std::string getNume() const;
     int getVarsta() const;
     int getRating() const;
     double getMediePuncteMeci() const;
