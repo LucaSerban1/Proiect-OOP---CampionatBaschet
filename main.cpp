@@ -85,8 +85,9 @@ int main(){
         std::cout << "2. Citeste echipe manual\n";
         std::cout << "3. Simuleaza campionatul\n";
         std::cout << "4. Afiseaza echipele\n";
-        std::cout << "5. Compara 2 jucatori din echipa introdusa de dvs. \n";
-        std::cout << "6. Iesi\n";
+        std::cout << "5. Compara 2 jucatori dintr-o echipa. \n";
+        std::cout << "6. Afiseaza statistici pentru o echipa\n";
+        std::cout << "7. Iesi\n";
         std::cin >> alegeri;
         if( alegeri ==1 ){
         int numarEchipe = 0;
@@ -141,10 +142,9 @@ int main(){
         if (alegeri == 5){
         std::shared_ptr<Echipa> e1;
         std::string numeEchipa;
-        std::cout << "Introduceti numele echipei pentru comparatie: ";
+        std::cout << "Introduceti numele echipei: ";
         std::getline(std::cin >> std::ws, numeEchipa);
         e1 = c1.getEchipaDupaNume(numeEchipa);
-        std::cout << "Numele echipei pentru comparatie: " << e1->getNume() << "\n";
         std::shared_ptr<Jucator> j1;
         std::shared_ptr<Jucator> j2;
         std::cout << "Introdu numele primului jucator: ";
@@ -163,6 +163,15 @@ int main(){
             std::cout << "Jucatorii sunt la fel de buni ca performanta.\n";
         }
         if(alegeri == 6){
+        std::shared_ptr<Echipa> e1;
+        std::cout << "Introduceti numele echipei pentru statistici: ";
+        std::string numeEchipa;
+        std::getline(std::cin >> std::ws, numeEchipa);
+        e1 = c1.getEchipaDupaNume(numeEchipa);
+        e1->afiseazaStatisticaPuncte();
+        e1->afiseazaStatisticaMvpJucatori();
+        }
+        if(alegeri == 7){
         std::cout << "In acest campionat s-au inscris " << c1.getPunctetotal() << " puncte.\n";
         std::cout << "Ai simulat campionatul cu succes!\n";
         ok = 0;

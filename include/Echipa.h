@@ -35,8 +35,9 @@ public:
     std::shared_ptr<Jucator> getJucatorDupaNume(const std::string& nume);
     Statistica<int> getStatisticaPuncte() ;
     Statistica<std::string> getStatisticaMvpJucatori() ;
-
-
+    
+    void afiseazaStatisticaPuncte() const;
+    void afiseazaStatisticaMvpJucatori() const;
     std::pair<int, std::string> SimuleazaMeci() const;
 
     void adaugaScorMeci(int scor);

@@ -27,7 +27,7 @@ public:
         return valori;
     }
 
-    std::vector<std::string> getValoriString(){
+    std::vector<std::string> getValoriString() const{
         return valori;}
 };
 

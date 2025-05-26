@@ -1,2 +1,31 @@
+1
+10
+2
+Echipa din Bv
+3
+Luca
+Fundas
+19
 5
-11 22 33 44 55
+40
+Playmaker
+Sorin
+Extrema
+20
+4
+35
+Interior Defence
+Dumy
+21
+3
+30
+Rebounder
+3
+4
+5
+Boston Celtics
+Jayson Tatum
+Jaylon Brown
+6
+Atlanta Hawks
+7

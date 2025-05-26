@@ -3,6 +3,7 @@
 //
 
 #include "Echipa.h"
+#include <Statistica.h>
 #include "Jucator.h"
 #include "Fundas.h"
 #include "Extrema.h"
@@ -10,50 +11,55 @@
 #include "DateInvalide.h"
 #include <iostream>
 
-
 Echipa::Echipa() = default;
 
-Echipa::Echipa(const std::string& nume) {
+Echipa::Echipa(const std::string &nume)
+{
     Nume = nume;
     PuncteCampionat = 0;
     statisticaPuncte = Statistica<int>();
     statisticaMvpJucatori = Statistica<std::string>();
 }
 
-
 Statistica<int> Echipa::getStatisticaPuncte() { return statisticaPuncte; }
-Statistica<std::string> Echipa::getStatisticaMvpJucatori()  { return statisticaMvpJucatori; }
+Statistica<std::string> Echipa::getStatisticaMvpJucatori() { return statisticaMvpJucatori; }
 
-const std::vector<std::shared_ptr<Jucator>>& Echipa::getJucatori() const {return j;}
+const std::vector<std::shared_ptr<Jucator>> &Echipa::getJucatori() const { return j; }
 
-std::string Echipa::getNume() const {return Nume;}
+std::string Echipa::getNume() const { return Nume; }
 
-void Echipa::setNume(std::string nume) {Nume = std::move(nume);}
+void Echipa::setNume(std::string nume) { Nume = std::move(nume); }
 
-int Echipa::getPuncteCampionat() const {return PuncteCampionat;}
+int Echipa::getPuncteCampionat() const { return PuncteCampionat; }
 
-void Echipa::setPuncteCampionat(int puncte) {PuncteCampionat = puncte;}
+void Echipa::setPuncteCampionat(int puncte) { PuncteCampionat = puncte; }
 
-void Echipa::adaugaJucator(const std::shared_ptr<Jucator>& jucator) {j.push_back(jucator);}
+void Echipa::adaugaJucator(const std::shared_ptr<Jucator> &jucator) { j.push_back(jucator); }
 
-std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string& nume){
-    for (const auto& jucator : j) {
-        if (jucator->getNume() == nume) {
+std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string &nume)
+{
+    for (const auto &jucator : j)
+    {
+        if (jucator->getNume() == nume)
+        {
             return jucator;
         }
     }
     return nullptr;
 }
 
-std::pair<int, std::string> Echipa::SimuleazaMeci() const {
+std::pair<int, std::string> Echipa::SimuleazaMeci() const
+{
     int punctemeci = 0, perf = 0, perfmax = 0;
     std::string MVP;
 
-    for (const auto& jucator : j) {
+    for (const auto &jucator : j)
+    {
         int pmj = jucator->SimuleazaPuncteMeci();
         punctemeci += pmj;
         perf = jucator->Performanta(pmj);
-        if (perf > perfmax) {
+        if (perf > perfmax)
+        {
             perfmax = perf;
             MVP = jucator->getNume();
         }
@@ -63,10 +69,31 @@ std::pair<int, std::string> Echipa::SimuleazaMeci() const {
     return {punctemeci, MVP};
 }
 
-void Echipa::adaugaScorMeci(int scor) {statisticaPuncte.adaugaValoare(scor);}
-void Echipa::adaugaMvpJucator(const std::string& nume) {statisticaMvpJucatori.adaugaValoare(nume);}
+void Echipa::adaugaScorMeci(int scor) { statisticaPuncte.adaugaValoare(scor); }
+void Echipa::adaugaMvpJucator(const std::string &nume) { statisticaMvpJucatori.adaugaValoare(nume); }
 
-std::istream& operator>>(std::istream& in, Echipa& e) {
+void Echipa::afiseazaStatisticaPuncte() const
+{
+    std::cout << "Statistica puncte:\n";
+    for (const auto &valoare : statisticaPuncte.getValorint())
+    {
+        std::cout << valoare << ", ";
+    }
+    std::cout << "\n";
+}
+
+void Echipa::afiseazaStatisticaMvpJucatori() const
+{
+    std::cout << "Statistica MVP Jucatori:\n";
+    for (const auto &valoare : statisticaMvpJucatori.getValoriString())
+    {
+        std::cout << valoare << " ";
+    }
+    std::cout << "\n";
+}
+
+std::istream &operator>>(std::istream &in, Echipa &e)
+{
     std::string nume;
     std::cout << "Numele echipei: ";
     std::getline(in >> std::ws, nume);
@@ -75,16 +102,21 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
     int nrjucatori;
     std::cout << "Numar jucatori: ";
     in >> nrjucatori;
-    try {
-        if (nrjucatori < 1 || nrjucatori > 10) {
+    try
+    {
+        if (nrjucatori < 1 || nrjucatori > 10)
+        {
             throw DateInvalide();
         }
-    } catch (const DateInvalide& ex) {
+    }
+    catch (const DateInvalide &ex)
+    {
         std::cerr << ex.what() << "\n";
         return in;
     }
 
-    for (int i = 0; i < nrjucatori; ++i) {
+    for (int i = 0; i < nrjucatori; ++i)
+    {
         std::string numejucator, pozitie, calitate;
         int varsta, rating;
         float ppg;
@@ -94,11 +126,15 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
 
         std::cout << "Pozitia (Fundas/Extrema/Centru): ";
         std::getline(in >> std::ws, pozitie);
-        try {
-            if (pozitie != "Fundas" && pozitie != "Extrema" && pozitie != "Centru") {
+        try
+        {
+            if (pozitie != "Fundas" && pozitie != "Extrema" && pozitie != "Centru")
+            {
                 throw DateInvalide();
             }
-        } catch (const DateInvalide& ex) {
+        }
+        catch (const DateInvalide &ex)
+        {
             std::cerr << ex.what() << "\n";
             --i;
             continue;
@@ -106,11 +142,15 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
 
         std::cout << "Varsta: ";
         in >> varsta;
-        try{
-            if (varsta < 18 || varsta > 40) {
+        try
+        {
+            if (varsta < 18 || varsta > 40)
+            {
                 throw DateInvalide();
             }
-        } catch (const DateInvalide& ex) {
+        }
+        catch (const DateInvalide &ex)
+        {
             std::cerr << ex.what() << "\n";
             --i;
             continue;
@@ -118,11 +158,15 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
 
         std::cout << "Rating (trebuie sa fie intre 1 si 5): ";
         in >> rating;
-        try{
-            if(rating < 1 || rating > 5) {
+        try
+        {
+            if (rating < 1 || rating > 5)
+            {
                 throw DateInvalide();
             }
-        }catch (const DateInvalide& ex) {
+        }
+        catch (const DateInvalide &ex)
+        {
             std::cerr << ex.what() << "\n";
             --i;
             continue;
@@ -131,40 +175,55 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
         std::cout << "Medie puncte pe meci: ";
         in >> ppg;
 
-        if (pozitie == "Fundas") {
+        if (pozitie == "Fundas")
+        {
             std::cout << "Calitate poate fi Playmaker sau Perimeter Defence: ";
             std::getline(in >> std::ws, calitate);
-            try{
-                if (calitate != "Playmaker" && calitate != "Perimeter Defence") {
+            try
+            {
+                if (calitate != "Playmaker" && calitate != "Perimeter Defence")
+                {
                     throw DateInvalide();
                 }
-            } catch (const DateInvalide& ex) {
+            }
+            catch (const DateInvalide &ex)
+            {
                 std::cerr << ex.what() << "\n";
                 --i;
                 continue;
             }
         }
-        else if (pozitie == "Extrema") {
+        else if (pozitie == "Extrema")
+        {
             std::cout << "Calitate poate fi Interior Defence sau Perimeter Defence: ";
             std::getline(in >> std::ws, calitate);
-            try{
-                if (calitate != "Interior Defence" && calitate != "Perimeter Defence") {
+            try
+            {
+                if (calitate != "Interior Defence" && calitate != "Perimeter Defence")
+                {
                     throw DateInvalide();
                 }
-            } catch (const DateInvalide& ex) {
+            }
+            catch (const DateInvalide &ex)
+            {
                 std::cerr << ex.what() << "\n";
                 --i;
                 continue;
             }
         }
-        else if (pozitie == "Centru") {
+        else if (pozitie == "Centru")
+        {
             std::cout << "Calitate poate fi Interior Defence sau Rebounder: ";
             std::getline(in >> std::ws, calitate);
-            try{
-                if (calitate != "Rebounder" && calitate != "Interior Defence") {
+            try
+            {
+                if (calitate != "Rebounder" && calitate != "Interior Defence")
+                {
                     throw DateInvalide();
                 }
-            } catch (const DateInvalide& ex) {
+            }
+            catch (const DateInvalide &ex)
+            {
                 std::cerr << ex.what() << "\n";
                 --i;
                 continue;
@@ -179,7 +238,6 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
         else if (pozitie == "Centru")
             jucator = std::make_shared<Centru>(numejucator, varsta, rating, ppg, calitate);
 
-
         if (jucator != nullptr)
             e.adaugaJucator(jucator);
         else
@@ -189,10 +247,12 @@ std::istream& operator>>(std::istream& in, Echipa& e) {
     return in;
 }
 
-std::ostream& operator<<(std::ostream& out, const std::shared_ptr<Echipa> &e) {
+std::ostream &operator<<(std::ostream &out, const std::shared_ptr<Echipa> &e)
+{
     out << "Nume echipa: " << e->getNume() << "\n";
     out << "Jucatori:\n";
-    for (const auto& jucator : e->getJucatori()) {
+    for (const auto &jucator : e->getJucatori())
+    {
         out << jucator->getNume() << " are rating " << jucator->getRating()
             << " si inscrie " << jucator->getMediePuncteMeci() << " puncte pe meci.\n";
     }
