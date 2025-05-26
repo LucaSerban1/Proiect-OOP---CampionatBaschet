@@ -115,6 +115,7 @@ int main(){
                     j = std::make_shared<Centru>(nume, varsta, experienta, medie, rol);
                 e.adaugaJucator(j);
             }
+
             c1.adaugaEchipa(std::make_shared<Echipa>(e));
         }
         std::cout << "Echipele au fost adaugate cu succes!\n";
@@ -174,6 +175,7 @@ int main(){
         if(alegeri == 7){
         std::cout << "In acest campionat s-au inscris " << c1.getPunctetotal() << " puncte.\n";
         std::cout << "Ai simulat campionatul cu succes!\n";
+        c1.adaugaEchipa(std::shared_ptr<Echipa>(nullptr));
         ok = 0;
         }
     }
