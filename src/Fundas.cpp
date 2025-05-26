@@ -6,9 +6,7 @@
 #include <iostream>
 
 Fundas::Fundas(const std::string& nume, int varsta, int rating, double mediePuncteMeci, const std::string& calitate)
-    : Jucator(nume, varsta, rating, mediePuncteMeci){
-        Calitate = calitate;
-    }
+    : Jucator(nume, varsta, rating, mediePuncteMeci), Calitate(calitate) {}
 
 int Fundas::Performanta(int puncte) const {
     int assists = 0, steals = 0;

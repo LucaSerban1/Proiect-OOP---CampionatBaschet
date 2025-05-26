@@ -97,7 +97,7 @@ int Jucator::SimuleazaBlocksMeci() const {
     }
 }
 
-const std::string Jucator::getNume() const {return Nume;}
+const std::string& Jucator::getNume() const {return Nume;}
 
 int Jucator::getVarsta() const {return Varsta;}
 

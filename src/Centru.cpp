@@ -6,9 +6,7 @@
 #include <iostream>
 
 Centru::Centru(const std::string& nume, int varsta, int rating, double mediePuncteMeci, const std::string& calitate)
-    : Jucator(nume, varsta, rating, mediePuncteMeci){
-        Calitate = calitate;
-    }
+    : Jucator(nume, varsta, rating, mediePuncteMeci), Calitate(calitate) {}
 
 int Centru::Performanta(int puncte) const {
     int blocks = 0, rebounds = 0;

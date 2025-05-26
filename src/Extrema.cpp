@@ -6,9 +6,7 @@
 #include <iostream>
 
 Extrema::Extrema(const std::string& nume, int varsta, int rating, double mediePuncteMeci, const std::string& calitate)
-    : Jucator(nume, varsta, rating, mediePuncteMeci){
-        Calitate = calitate;
-    }
+    : Jucator(nume, varsta, rating, mediePuncteMeci), Calitate(calitate) {}
 
 int Extrema::Performanta(int puncte) const {
     int steals = 0, blocks = 0;

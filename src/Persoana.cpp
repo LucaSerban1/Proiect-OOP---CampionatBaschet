@@ -5,7 +5,4 @@
 
 #include "Persoana.h"
 
-Persoana::Persoana(const std::string& nume, int varsta) {
-    Nume = nume;
-    Varsta = varsta;
-}
+Persoana::Persoana(const std::string& nume, int varsta) :   Nume(nume), Varsta(varsta) {}

@@ -27,7 +27,7 @@ public:
     Echipa();
     explicit Echipa(const std::string& nume);
     const std::vector<std::shared_ptr<Jucator>>& getJucatori() const;
-    const std::string getNume() const;
+    const std::string& getNume() const;
     void setNume(std::string nume);
     int getPuncteCampionat() const;
     void setPuncteCampionat(int puncte);
