@@ -19,9 +19,9 @@ public:
         valori.push_back(valoare);
     }
 
-    int getDimensiune() const {
-        return static_cast<int>(valori.size());
-    }
+    // int getDimensiune() const {
+    //     return static_cast<int>(valori.size());
+    // }
 
     std::vector<int> getValorint() const {
         return valori;

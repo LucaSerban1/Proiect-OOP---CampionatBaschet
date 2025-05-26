@@ -33,8 +33,8 @@ public:
     void setPuncteCampionat(int puncte);
     void adaugaJucator(const std::shared_ptr<Jucator>& jucator);
     std::shared_ptr<Jucator> getJucatorDupaNume(const std::string& nume);
-    Statistica<int> getStatisticaPuncte() ;
-    Statistica<std::string> getStatisticaMvpJucatori() ;
+    // Statistica<int> getStatisticaPuncte() ;
+    // Statistica<std::string> getStatisticaMvpJucatori() ;
     
     void afiseazaStatisticaPuncte() const;
     void afiseazaStatisticaMvpJucatori() const;

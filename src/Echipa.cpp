@@ -21,8 +21,8 @@ Echipa::Echipa(const std::string &nume)
     statisticaMvpJucatori = Statistica<std::string>();
 }
 
-Statistica<int> Echipa::getStatisticaPuncte() { return statisticaPuncte; }
-Statistica<std::string> Echipa::getStatisticaMvpJucatori() { return statisticaMvpJucatori; }
+// Statistica<int> Echipa::getStatisticaPuncte() { return statisticaPuncte; }
+// Statistica<std::string> Echipa::getStatisticaMvpJucatori() { return statisticaMvpJucatori; }
 
 const std::vector<std::shared_ptr<Jucator>> &Echipa::getJucatori() const { return j; }
 
