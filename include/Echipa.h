@@ -36,7 +36,7 @@ public:
     Statistica<int> getStatisticaPuncte() ;
     Statistica<std::string> getStatisticaMvpJucatori() ;
 
-    void afiseazaEchipa() const;
+
     std::pair<int, std::string> SimuleazaMeci() const;
 
     void adaugaScorMeci(int scor);

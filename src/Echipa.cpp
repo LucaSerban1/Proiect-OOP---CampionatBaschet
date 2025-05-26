@@ -45,16 +45,6 @@ std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string& nume){
     return nullptr;
 }
 
-void Echipa::afiseazaEchipa() const {
-    std::cout << "Echipa: " << Nume << " cu " << j.size() << " jucatori:\n";
-    for (const auto& jucator : j) {
-        if (jucator) {
-            std::cout << jucator->getNume() << " are rating " << jucator->getRating()
-                      << " si inscrie " << jucator->getMediePuncteMeci() << " puncte pe meci.\n";
-        } 
-    }
-}
-
 std::pair<int, std::string> Echipa::SimuleazaMeci() const {
     int punctemeci = 0, perf = 0, perfmax = 0;
     std::string MVP;
