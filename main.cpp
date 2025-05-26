@@ -77,19 +77,9 @@ int main(){
 
     Campionat c1;
     int ok = 1;
-    int alegeri =0;
     while (ok == 1)
     {
-        std::cout << "Alege ce vrei sa faci:\n";
-        std::cout << "1. Citeste echipe din fisier JSON\n";
-        std::cout << "2. Citeste echipe manual\n";
-        std::cout << "3. Simuleaza campionatul\n";
-        std::cout << "4. Afiseaza echipele\n";
-        std::cout << "5. Compara 2 jucatori dintr-o echipa. \n";
-        std::cout << "6. Afiseaza statistici pentru o echipa\n";
-        std::cout << "7. Iesi\n";
-        std::cin >> alegeri;
-        if( alegeri ==1 ){
+
         int numarEchipe = 0;
         std::cout << "Cate echipe vrei sa introduci? ";
         std::cin >> numarEchipe;
@@ -119,33 +109,24 @@ int main(){
             c1.adaugaEchipa(std::make_shared<Echipa>(e));
         }
         std::cout << "Echipele au fost adaugate cu succes!\n";
-        }
-        if(alegeri == 2){
         Echipa e1;
         std::cout << "Introduceti o echipa manual:\n";
         std::cin >> e1;
         e1.setPuncteCampionat(0);
         c1.adaugaEchipa(std::make_shared<Echipa>(e1));
-        }
-        if(alegeri == 3)
+        
+        c1.genereazaMeciuri();
+        c1.simuleazaCampionat();
+        c1.afiseazaClasament();
+        for (const auto &e : c1.getEchipe())
         {
-            c1.genereazaMeciuri();
-            c1.simuleazaCampionat();
-            c1.afiseazaClasament();
+            std::cout << e << "\n";
         }
-        if(alegeri == 4)
-        {
-            for (const auto &e : c1.getEchipe())
-            {
-                std::cout << e << "\n";
-            }
-        }
-        if (alegeri == 5){
-        std::shared_ptr<Echipa> e1;
         std::string numeEchipa;
-        std::cout << "Introduceti numele echipei: ";
+        std::cout << "Introduceti numele echipei pentru a compara 2 jucatori din aceasta: ";
         std::getline(std::cin >> std::ws, numeEchipa);
-        e1 = c1.getEchipaDupaNume(numeEchipa);
+        std::shared_ptr<Echipa> e2;
+        e2 = c1.getEchipaDupaNume(numeEchipa);
         std::shared_ptr<Jucator> j1;
         std::shared_ptr<Jucator> j2;
         std::cout << "Introdu numele primului jucator: ";
@@ -154,30 +135,20 @@ int main(){
         std::cout << "Introdu numele celui de-al doilea jucator: ";
         std::string numeJucator2;
         std::getline(std::cin >> std::ws, numeJucator2);
-        std::shared_ptr<Jucator> jucator1 = e1->getJucatorDupaNume(numeJucator1);
-        std::shared_ptr<Jucator> jucator2 = e1->getJucatorDupaNume(numeJucator2);
+        std::shared_ptr<Jucator> jucator1 = e2->getJucatorDupaNume(numeJucator1);
+        std::shared_ptr<Jucator> jucator2 = e2->getJucatorDupaNume(numeJucator2);
         if (jucator1 < jucator2)
             std::cout << "Jucatorul " << numeJucator1 << " este mai bun decat " << numeJucator2 << "\n";
-        else if (jucator1 > jucator2)
-            std::cout << "Jucatorul " << numeJucator2 << " este mai bun decat " << numeJucator1 << "\n";
         else
-            std::cout << "Jucatorii sunt la fel de buni ca performanta.\n";
-        }
-        if(alegeri == 6){
-        std::shared_ptr<Echipa> e1;
+            std::cout << "Jucatorul " << numeJucator2 << " este mai bun decat " << numeJucator1 << "\n";
         std::cout << "Introduceti numele echipei pentru statistici: ";
-        std::string numeEchipa;
         std::getline(std::cin >> std::ws, numeEchipa);
-        e1 = c1.getEchipaDupaNume(numeEchipa);
-        e1->afiseazaStatisticaPuncte();
-        e1->afiseazaStatisticaMvpJucatori();
-        }
-        if(alegeri == 7){
+        e2 = c1.getEchipaDupaNume(numeEchipa);
+        e2->afiseazaStatisticaPuncte();
+        e2->afiseazaStatisticaMvpJucatori();
         std::cout << "In acest campionat s-au inscris " << c1.getPunctetotal() << " puncte.\n";
         std::cout << "Ai simulat campionatul cu succes!\n";
-        c1.adaugaEchipa(std::shared_ptr<Echipa>(nullptr));
         ok = 0;
-        }
     }
     return 0;
 }
