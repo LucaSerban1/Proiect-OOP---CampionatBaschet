@@ -17,17 +17,17 @@
 
 class Echipa {
 private:
-    std::string Nume;
+    std::string Nume = "";
     std::vector<std::shared_ptr<Jucator>> j;
-    int PuncteCampionat;
-    Statistica<int> statisticaPuncte;
-    Statistica<std::string> statisticaMvpJucatori;
+    int PuncteCampionat = 0;
+    Statistica<int> statisticaPuncte = Statistica<int>();
+    Statistica<std::string> statisticaMvpJucatori = Statistica<std::string>();
     static int punctetotal;
 public:
     Echipa();
     Echipa(const std::string& nume);
     const std::vector<std::shared_ptr<Jucator>>& getJucatori() const;
-    std::string getNume() const;
+    const std::string getNume() const;
     void setNume(std::string nume);
     int getPuncteCampionat() const;
     void setPuncteCampionat(int puncte);

@@ -16,9 +16,6 @@ Echipa::Echipa() = default;
 Echipa::Echipa(const std::string &nume)
 {
     Nume = nume;
-    PuncteCampionat = 0;
-    statisticaPuncte = Statistica<int>();
-    statisticaMvpJucatori = Statistica<std::string>();
 }
 
 // Statistica<int> Echipa::getStatisticaPuncte() { return statisticaPuncte; }
@@ -26,7 +23,7 @@ Echipa::Echipa(const std::string &nume)
 
 const std::vector<std::shared_ptr<Jucator>> &Echipa::getJucatori() const { return j; }
 
-std::string Echipa::getNume() const { return Nume; }
+const std::string Echipa::getNume() const { return Nume; }
 
 void Echipa::setNume(std::string nume) { Nume = std::move(nume); }
 
@@ -50,7 +47,7 @@ std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string &nume)
 
 std::pair<int, std::string> Echipa::SimuleazaMeci() const
 {
-    int punctemeci = 0, perf = 0, perfmax = 0;
+    int punctemeci = 0, perf, perfmax = 0;
     std::string MVP;
 
     for (const auto &jucator : j)
