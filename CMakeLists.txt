@@ -130,7 +130,20 @@ FetchContent_MakeAvailable(googletest)
 ###############################################################################
 
 # NOTE: update executable name in .github/workflows/cmake.yml:25 when changing name here
-add_executable(${MAIN_EXECUTABLE_NAME} main.cpp ${SOURCES})
+add_executable(${MAIN_EXECUTABLE_NAME} main.cpp ${SOURCES}
+include/Campionat.h
+include/Centru.h
+include/DateInvalide.h
+include/Echipa.h
+include/Extrema.h
+include/Fundas.h
+include/Jucator.h
+include/Meci.h
+include/MeciDeLiga.h
+include/MeciPlayoff.h
+include/Persoana.h
+include/Statistica.h
+include/UserInterface.h)
 
 # NOTE: Add all defined targets (e.g. executables, libraries, etc. )
 # NOTE: RUN_SANITIZERS is optional, if it's not present it will default to true
