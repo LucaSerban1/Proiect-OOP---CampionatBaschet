@@ -45,8 +45,6 @@ std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string &nume)
         }
     }
     return nullptr;
-    Campionat c1;
-    c1.adaugaEchipa(std::make_shared<Echipa>(*this));
 }
 
 std::pair<int, std::string> Echipa::SimuleazaMeci() const
