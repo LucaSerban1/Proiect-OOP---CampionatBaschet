@@ -194,7 +194,10 @@ int main(){
         if(alegeri == 8){
         std::cout << "In acest campionat s-au inscris " << c1.getPunctetotal() << " puncte.\n";
         std::cout << "Ai simulat campionatul cu succes!\n";
-        c1.adaugaEchipa(std::shared_ptr<Echipa>(nullptr));
+        Campionat c2;
+        c2.adaugaEchipa(std::shared_ptr<Echipa>(nullptr));
+        c2.adaugaEchipa(std::shared_ptr<Echipa>(nullptr));
+        c2.genereazaMeciuri();
         ok = 0;
         }
     }
