@@ -137,6 +137,9 @@ UserInterface::UserInterface(){
         ok = 0;
         }
     }
+    Echipa e2;
+    Campionat c2;
+    c2.adaugaEchipa(std::make_shared<Echipa>(e2));
     }
     fin.close();
 }
