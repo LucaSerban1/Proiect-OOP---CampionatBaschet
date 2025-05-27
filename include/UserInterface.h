@@ -10,6 +10,7 @@
 #include "Extrema.h"
 #include "Centru.h"
 #include "Echipa.h"
+#include "DateInvalide.h"
 #include "Campionat.h"
 #include "DateInvalide.h"
 #include "MeciPlayoff.h"

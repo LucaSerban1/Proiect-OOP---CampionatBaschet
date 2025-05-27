@@ -78,7 +78,7 @@ void Echipa::afiseazaStatisticaPuncte() const
     std::cout << "Statistica puncte:\n";
     for (const auto &valoare : statisticaPuncte.getValorint())
     {
-        std::cout << valoare << ", ";
+        std::cout << valoare << "; ";
     }
     std::cout << "\n";
 }
@@ -89,7 +89,7 @@ void Echipa::afiseazaStatisticaMvpJucatori() const
     std::cout << "Statistica MVP Jucatori:\n";
     for (const auto &valoare : statisticaMvpJucatori.getValoriString())
     {
-        std::cout << valoare << " ";
+        std::cout << valoare << "; ";
     }
     std::cout << "\n";
 }

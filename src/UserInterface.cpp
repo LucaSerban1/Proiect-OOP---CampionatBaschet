@@ -80,38 +80,72 @@ UserInterface::UserInterface(){
                 std::cout << e << "\n";
             }
         }
-        if (alegeri == 5){
-        std::shared_ptr<Echipa> e1;
-        std::string numeEchipa;
-        std::cout << "Introduceti numele echipei: ";
-        std::getline(std::cin >> std::ws, numeEchipa);
-        e1 = c1.getEchipaDupaNume(numeEchipa);
-        std::shared_ptr<Jucator> j1;
-        std::shared_ptr<Jucator> j2;
-        std::cout << "Introdu numele primului jucator: ";
-        std::string numeJucator1;
-        std::getline(std::cin >> std::ws, numeJucator1);
-        std::cout << "Introdu numele celui de-al doilea jucator: ";
-        std::string numeJucator2;
-        std::getline(std::cin >> std::ws, numeJucator2);
-        std::shared_ptr<Jucator> jucator1 = e1->getJucatorDupaNume(numeJucator1);
-        std::shared_ptr<Jucator> jucator2 = e1->getJucatorDupaNume(numeJucator2);
-        if (jucator1 < jucator2)
-            std::cout << "Jucatorul " << numeJucator1 << " este mai bun decat " << numeJucator2 << "\n";
-        else if (jucator1 > jucator2)
-            std::cout << "Jucatorul " << numeJucator2 << " este mai bun decat " << numeJucator1 << "\n";
-        else
-            std::cout << "Jucatorii sunt la fel de buni ca performanta.\n";
+        if (alegeri == 5) {
+            bool valid = false;
+            while (!valid) {
+                try {
+                    std::shared_ptr<Echipa> e1;
+                    std::string numeEchipa;
+                    std::cout << "Introduceti numele echipei: ";
+                    std::getline(std::cin >> std::ws, numeEchipa);
+                    e1 = c1.getEchipaDupaNume(numeEchipa);
+                    
+                    if (!e1) {
+                        throw DateInvalide();
+                    }
+
+                    std::cout << "Introdu numele primului jucator: ";
+                    std::string numeJucator1;
+                    std::getline(std::cin >> std::ws, numeJucator1);
+                    
+                    std::cout << "Introdu numele celui de-al doilea jucator: ";
+                    std::string numeJucator2;
+                    std::getline(std::cin >> std::ws, numeJucator2);
+                    
+                    std::shared_ptr<Jucator> jucator1 = e1->getJucatorDupaNume(numeJucator1);
+                    if (!jucator1) {
+                        throw DateInvalide();
+                    }
+                    
+                    std::shared_ptr<Jucator> jucator2 = e1->getJucatorDupaNume(numeJucator2);
+                    if (!jucator2) {
+                        throw DateInvalide();
+                    }
+
+                    if (jucator1 < jucator2)
+                        std::cout << "Jucatorul " << numeJucator1 << " este mai bun decat " << numeJucator2 << "\n";
+                    else if (jucator1 > jucator2)
+                        std::cout << "Jucatorul " << numeJucator2 << " este mai bun decat " << numeJucator1 << "\n";
+                    else
+                        std::cout << "Jucatorii sunt la fel de buni ca performanta.\n";
+                    
+                    valid = true; 
+                }
+                catch (const DateInvalide& e) {
+                    std::cerr << e.what() << "\n";
+
+                }
+            }
         }
         if(alegeri == 6){
+        bool valid = false;
+        while (!valid) {
+            try {
         std::shared_ptr<Echipa> e1;
         std::cout << "Introduceti numele echipei pentru statistici: ";
         std::string numeEchipa;
         std::getline(std::cin >> std::ws, numeEchipa);
         e1 = c1.getEchipaDupaNume(numeEchipa);
+        if(!e1)
+        {
+            throw DateInvalide();
+        }
         e1->afiseazaStatisticaPuncte();
         e1->afiseazaStatisticaMvpJucatori();
-        }
+        valid = true;
+        }catch (const DateInvalide& e) {
+            std::cerr << e.what() << "\n";
+        }}}
         if(alegeri == 7)
         {
             std::cout << "Simularea finalei campionatului:\n";
@@ -132,16 +166,9 @@ UserInterface::UserInterface(){
         if(alegeri == 8){
         std::cout << "In acest campionat s-au inscris " << c1.getPunctetotal() << " puncte.\n";
         std::cout << "Ai simulat campionatul cu succes!\n";
-        Campionat c2;
-        c2.adaugaEchipa(std::shared_ptr<Echipa>(nullptr));
-        c2.adaugaEchipa(std::shared_ptr<Echipa>(nullptr));
-        c2.genereazaMeciuri();
         ok = 0;
         }
     }
-    Echipa e2;
-    Campionat c2;
-    c2.adaugaEchipa(std::make_shared<Echipa>(e2));
     }
     fin.close();
 }
