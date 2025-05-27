@@ -48,7 +48,7 @@ void Campionat::afiseazaClasament() {
         return e1->getPuncteCampionat() > e2->getPuncteCampionat();
     });
     for (const auto& echipa : echipe) {
-        std::cout << echipa->getNume() << " - " << echipa->getPuncteCampionat()
+        std::cout <<". " << echipa->getNume() << " - " << echipa->getPuncteCampionat()
                   << " victorii si " << echipe.size() - echipa->getPuncteCampionat() - 1 << " pierderi.\n";
     }
 }
