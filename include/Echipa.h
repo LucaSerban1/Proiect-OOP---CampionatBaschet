@@ -15,6 +15,7 @@
 #include <Statistica.h>
 
 
+
 class Echipa {
 private:
     std::string Nume = "";

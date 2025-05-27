@@ -8,6 +8,7 @@
 #include "Fundas.h"
 #include "Extrema.h"
 #include "Centru.h"
+#include "Campionat.h"
 #include "DateInvalide.h"
 #include <iostream>
 
@@ -30,6 +31,8 @@ int Echipa::getPuncteCampionat() const { return PuncteCampionat; }
 
 void Echipa::setPuncteCampionat(int puncte) { PuncteCampionat = puncte; }
 
+
+
 void Echipa::adaugaJucator(const std::shared_ptr<Jucator> &jucator) { j.push_back(jucator); }
 
 std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string &nume)
@@ -42,6 +45,8 @@ std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string &nume)
         }
     }
     return nullptr;
+    Campionat c1;
+    c1.adaugaEchipa(std::make_shared<Echipa>(*this));
 }
 
 std::pair<int, std::string> Echipa::SimuleazaMeci() const
