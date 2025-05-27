@@ -108,11 +108,11 @@ double Jucator::getMediePuncteMeci() const {return MediePuncteMeci;}
 
 
 bool operator<(const Jucator& j1, const Jucator& j2) {
-    if (j2.getRating() < j1.getRating()) return true;
-    else if (j2.getRating() == j1.getRating()) {
-        if (j2.getMediePuncteMeci() < j1.getMediePuncteMeci()) return true;
+    if (j1.getRating() < j2.getRating()) return true;
+    else if (j1.getRating() == j2.getRating()) {
+        if (j1.getMediePuncteMeci() < j2.getMediePuncteMeci()) return true;
         else if (j1.getMediePuncteMeci() == j2.getMediePuncteMeci())
-            return j2.getVarsta() < j1.getVarsta();
+            return j1.getVarsta() < j2.getVarsta();
         else return false;
     }
     else return false;

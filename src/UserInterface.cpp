@@ -2,7 +2,7 @@
 
 
 UserInterface::UserInterface(){
-    std::ifstream fin("D:/Proiect-OOP---CampionatBaschet/echipe.json");
+    std::ifstream fin("../echipe.json");
     if (!fin.is_open())
     {
         std::cout << "Nu s-a putut deschide fisierul JSON!\n";
@@ -15,6 +15,7 @@ UserInterface::UserInterface(){
     Campionat c1;
     int ok = 1;
     int alegeri =0;
+    int nrEchipeTotal = 0;
     while (ok == 1)
     {
         std::cout << "Alege ce vrei sa faci:\n";
@@ -28,12 +29,12 @@ UserInterface::UserInterface(){
         std::cout << "8. Iesi\n";
         std::cin >> alegeri;
         if( alegeri ==1 ){
-        int numarEchipe = 0;
         std::cout << "Cate echipe vrei sa introduci? ";
+        int numarEchipe = 0;
         std::cin >> numarEchipe;
         for (int i = 0; i < numarEchipe; ++i)
         {
-            std::string numeEchipa = jEchipe[i].value("nume", "Fara Nume");
+            std::string numeEchipa = jEchipe[i+nrEchipeTotal].value("nume", "Fara Nume");
             Echipa e(numeEchipa);
             for (const auto &jucator : jEchipe[i]["jucatori"])
             {
@@ -56,6 +57,7 @@ UserInterface::UserInterface(){
 
             c1.adaugaEchipa(std::make_shared<Echipa>(e));
         }
+        nrEchipeTotal += numarEchipe;
         std::cout << "Echipele au fost adaugate cu succes!\n";
         }
         if(alegeri == 2){
