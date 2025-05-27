@@ -35,6 +35,7 @@ void Echipa::setPuncteCampionat(int puncte) { PuncteCampionat = puncte; }
 
 void Echipa::adaugaJucator(const std::shared_ptr<Jucator> &jucator) { j.push_back(jucator); }
 
+// cppcheck-suppress unusedFunction
 std::shared_ptr<Jucator> Echipa::getJucatorDupaNume(const std::string &nume)
 {
     for (const auto &jucator : j)
@@ -71,6 +72,7 @@ std::pair<int, std::string> Echipa::SimuleazaMeci() const
 void Echipa::adaugaScorMeci(int scor) { statisticaPuncte.adaugaValoare(scor); }
 void Echipa::adaugaMvpJucator(const std::string &nume) { statisticaMvpJucatori.adaugaValoare(nume); }
 
+// cppcheck-suppress unusedFunction
 void Echipa::afiseazaStatisticaPuncte() const
 {
     std::cout << "Statistica puncte:\n";
@@ -81,6 +83,7 @@ void Echipa::afiseazaStatisticaPuncte() const
     std::cout << "\n";
 }
 
+// cppcheck-suppress unusedFunction
 void Echipa::afiseazaStatisticaMvpJucatori() const
 {
     std::cout << "Statistica MVP Jucatori:\n";

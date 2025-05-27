@@ -4,6 +4,7 @@
 
 #include "Campionat.h"
 
+// cppcheck-suppress unusedFunction
 void Campionat::adaugaEchipa(const std::shared_ptr<Echipa>& echipa) {
     echipe.push_back(echipa);
 }
@@ -12,10 +13,12 @@ int Campionat::getPunctetotal() { return punctetotal; }
 void Campionat::setPunctetotal(int puncte1, int puncte2) { punctetotal = puncte1+puncte2; }
 int Campionat::punctetotal = 0;
 
+// cppcheck-suppress unusedFunction
 const std::vector<std::shared_ptr<Echipa>>& Campionat::getEchipe() const {
     return echipe;
 }
 
+// cppcheck-suppress unusedFunction
 std::shared_ptr<Echipa> Campionat::getEchipaDupaNume(const std::string& nume)const{
     for (const auto& echipa : echipe)
     {
@@ -26,6 +29,7 @@ std::shared_ptr<Echipa> Campionat::getEchipaDupaNume(const std::string& nume)con
     return nullptr;
 }
 
+// cppcheck-suppress unusedFunction
 void Campionat::genereazaMeciuri() {
     for (size_t i = 0; i < echipe.size(); ++i) {
         for (size_t j = i + 1; j < echipe.size(); ++j) {
@@ -34,6 +38,8 @@ void Campionat::genereazaMeciuri() {
     }
 }
 
+
+// cppcheck-suppress unusedFunction
 void Campionat::simuleazaCampionat() {
     int runda = 1;
     for (auto& meci : meciuri) {
@@ -42,6 +48,7 @@ void Campionat::simuleazaCampionat() {
     }
 }
 
+// cppcheck-suppress unusedFunction
 void Campionat::afiseazaClasament() {
     std::cout << "\n--- Clasament final ---\n";
     std::sort(echipe.begin(), echipe.end(), [](const std::shared_ptr<Echipa>& e1, const std::shared_ptr<Echipa>& e2) {

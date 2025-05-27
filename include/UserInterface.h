@@ -13,6 +13,7 @@
 #include "Campionat.h"
 #include "DateInvalide.h"
 #include "MeciPlayoff.h"
+#pragma once
 
 using json = nlohmann::json;
 
